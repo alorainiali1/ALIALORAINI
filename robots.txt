@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alialoraini.sa/sitemap.xml
