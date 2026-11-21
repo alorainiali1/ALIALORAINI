@@ -104,6 +104,7 @@ body{margin:0;color:var(--ink);font-family:var(--ar);-webkit-font-smoothing:anti
 .toc .ar{font-size:26px;color:var(--gold)}
 .ftr{position:relative;z-index:7;background:var(--bg);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:26px max(22px,env(safe-area-inset-right,0px)) calc(26px + env(safe-area-inset-bottom,0px)) max(22px,env(safe-area-inset-left,0px));color:var(--mute);font-size:14px;border-top:1px solid var(--hair)}
 .ftr a{color:inherit;text-decoration:none}
+.ic{width:.78em;height:.78em;color:var(--gold);vertical-align:-.05em;margin-inline-start:3px}
 @media (max-width:700px){.toc a{grid-template-columns:50px minmax(0,1fr) auto;gap:14px}}
 .curtain{position:fixed;inset:0;z-index:100;pointer-events:none;background:var(--bg);transform:scaleY(0);transform-origin:bottom;transition:transform .7s var(--ease)}
 .curtain::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--gold);box-shadow:0 0 18px var(--gold)}
@@ -141,10 +142,10 @@ body{margin:0;color:var(--ink);font-family:var(--ar);-webkit-font-smoothing:anti
 
 <main class="track" id="track"></main>
 <section class="issue" id="issue">
-  <div class="hd"><h2><span lang="ar">في هذا العدد</span><span lang="en">In this issue</span></h2><span class="mono">DATA &amp; STRATEGY · <span lang="ar">العدد ٠١</span><span lang="en">Issue 01</span></span></div>
+  <div class="hd"><h2><span lang="ar">استكشف</span><span lang="en">Explore</span></h2><span class="mono">DATA &amp; STRATEGY</span></div>
   <nav class="toc" aria-label="Contents"><a href="/about.html"><span class="k">01</span><span><strong><span lang="ar">عني</span><span lang="en">About</span></strong><small><span lang="ar">المؤسسات القادمة ستقودها البيانات</span><span lang="en">The next organisations will be led by data</span></small></span><span class="ar" aria-hidden="true"><span lang="ar">←</span><span lang="en">→</span></span></a><a href="/career.html"><span class="k">02</span><span><strong><span lang="ar">المسيرة</span><span lang="en">Career</span></strong><small><span lang="ar">خمس محطات صنعت نظرتي</span><span lang="en">Five stations that shaped my view</span></small></span><span class="ar" aria-hidden="true"><span lang="ar">←</span><span lang="en">→</span></span></a><a href="/insights.html"><span class="k">03</span><span><strong><span lang="ar">رؤى</span><span lang="en">Insights</span></strong><small><span lang="ar">أفكار عن المستقبل والقرار</span><span lang="en">Thinking on the future and decisions</span></small></span><span class="ar" aria-hidden="true"><span lang="ar">←</span><span lang="en">→</span></span></a><a href="/contact.html"><span class="k">04</span><span><strong><span lang="ar">تواصل</span><span lang="en">Contact</span></strong><small><span lang="ar">إذا كنت تبني مؤسسة تقودها البيانات</span><span lang="en">If you are building a data-led organisation</span></small></span><span class="ar" aria-hidden="true"><span lang="ar">←</span><span lang="en">→</span></span></a></nav>
 </section>
-<footer class="ftr"><span>© 2026 <span lang="ar">علي العريني</span><span lang="en">Ali Aloraini</span></span><a href="https://www.linkedin.com/in/alorainiali" target="_blank" rel="noopener">LinkedIn ↗</a><span style="direction:ltr">alialoraini.sa</span></footer>
+<footer class="ftr"><span>© 2026 <span lang="ar">علي العريني</span><span lang="en">Ali Aloraini</span></span><a href="https://www.linkedin.com/in/alorainiali" target="_blank" rel="noopener">LinkedIn <svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="/ali-aloraini.vcf"><span lang="ar">احفظ جهة الاتصال</span><span lang="en">Save contact</span></a><span style="direction:ltr">alialoraini.sa</span></footer>
 <div class="curtain" aria-hidden="true"></div>
 
 <div class="hud"><span class="mono" id="pct">000</span><span class="bar"><i id="bar"></i></span></div>

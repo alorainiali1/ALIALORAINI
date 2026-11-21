@@ -37,6 +37,17 @@ document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListe
   function ok(){if(n)n.textContent=AA.lang()==='en'?'Email copied.':'تم نسخ البريد.'}
   try{navigator.clipboard.writeText(v).then(ok,function(){if(n)n.textContent=v})}catch(e){if(n)n.textContent=v}})});
 
+/* share card */
+document.querySelectorAll('[data-share]').forEach(function(btn){btn.addEventListener('click',function(){var u=btn.getAttribute('data-share'),n=document.getElementById(btn.getAttribute('aria-controls')),en=AA.lang()==='en';
+  function say(t){if(n)n.textContent=t}
+  if(navigator.share){navigator.share({title:en?'Ali Aloraini':'علي العريني',text:'Data & Strategy',url:u}).catch(function(){})}
+  else{try{navigator.clipboard.writeText(u).then(function(){say(en?'Link copied.':'تم نسخ الرابط.')},function(){say(u)})}catch(e){say(u)}}})});
+
+/* card tilts toward the pointer */
+var face=document.querySelector('.face');
+if(face&&!reduce&&matchMedia('(hover:hover)').matches){face.addEventListener('pointermove',function(e){var r=face.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;face.style.transform='perspective(900px) rotateY('+(px*10)+'deg) rotateX('+(-py*10)+'deg)'});
+  face.addEventListener('pointerleave',function(){face.style.transform=''})}
+
 /* cover: gold points that gather into the page's word and part around the cursor */
 var cv=document.querySelector('.cover canvas');
 if(cv){
