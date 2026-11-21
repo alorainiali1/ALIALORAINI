@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>علي العريني | Ali Aloraini</title>
-<meta name="description" content="علي العريني: أرى مستقبل المؤسسات في البيانات، وأبني طريقي لأقودها إليه. Ali Aloraini: building toward leading organisations with data.">
+<title>علي العريني | Data &amp; Strategy</title>
+<meta name="description" content="البيانات لا تصف المستقبل، بل تبنيه. علي العريني · Data &amp; Strategy.">
 <meta name="theme-color" content="#09090B">
 <meta property="og:title" content="علي العريني | Ali Aloraini">
-<meta property="og:description" content="أرى مستقبل المؤسسات في البيانات.">
+<meta property="og:description" content="البيانات لا تصف المستقبل، بل تبنيه. Data doesn't describe the future. It builds it.">
 <meta property="og:url" content="https://alialoraini.sa/">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://alialoraini.sa/">
@@ -34,7 +34,6 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:1240px;margin-inline:auto;padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px))}
 .tag{font-family:var(--f-en);font-size:11.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
 
-#stage{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;pointer-events:none}
 .shade{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(75% 65% at 50% 45%,rgba(9,9,11,0) 35%,rgba(9,9,11,.7) 100%);transition:background 1s}
 .reading .shade{background:rgba(9,9,11,.6)}
 main,footer,.hd{position:relative;z-index:1}
@@ -183,11 +182,57 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 .pg{position:fixed;bottom:calc(22px + env(safe-area-inset-bottom,0px));inset-inline-start:max(28px,env(safe-area-inset-left,0px));z-index:15;font-family:var(--f-en);font-size:11.5px;letter-spacing:.2em;color:var(--dim);direction:ltr;pointer-events:none}
 .pg b{color:var(--gold);font-weight:500}
 @media (max-width:980px){.arts{grid-template-columns:1fr}.pg{display:none}}
+
+#film{position:fixed;inset:-2%;width:104%;height:104%;object-fit:cover;z-index:0;pointer-events:none;filter:grayscale(1) brightness(.78) contrast(1.12);transform:scale(1.02);transition:filter 1.2s}
+.tint{position:fixed;inset:0;z-index:0;pointer-events:none;background:#C9A86A;mix-blend-mode:color;opacity:.85}
+.nofilm #film,.nofilm .tint{display:none}
+.nofilm{background:radial-gradient(90% 70% at 70% 30%,#1a1710 0%,var(--bg) 60%) fixed,var(--bg)}
+@media (prefers-reduced-motion:no-preference){#film.push{animation:push 1.8s cubic-bezier(.2,.7,.1,1)}@keyframes push{from{transform:scale(1.1);filter:grayscale(1) brightness(.45) contrast(1.12) blur(6px)}to{transform:scale(1.02)}}}
+.shade{background:linear-gradient(180deg,rgba(9,9,11,.55) 0%,rgba(9,9,11,.15) 35%,rgba(9,9,11,.85) 100%)!important}
+.reading .shade{background:rgba(9,9,11,.74)!important}
+.hero .vision-line{font-weight:700;font-size:clamp(44px,6.6vw,108px);line-height:1.06;letter-spacing:-.02em;margin:18px 0 0;max-width:14ch;text-wrap:balance}
+:root[data-l="en"] .hero .vision-line{font-weight:500;letter-spacing:-.04em;max-width:16ch}
+.vision-line em{font-style:normal;color:var(--gold-2)}
+.who{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-top:30px}
+.who b{font-size:clamp(22px,2vw,28px);font-weight:700}
+:root[data-l="en"] .who b{font-weight:600}
+.who>span{font-family:var(--f-en);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.hero .wrap{width:100%}
+.principles{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--gold)}
+.pr{padding:28px 26px 30px 0;padding-inline-end:26px;border-inline-end:1px solid var(--line);min-width:0}
+.pr+.pr{padding-inline-start:26px}
+.pr:last-child{border-inline-end:0}
+.pr .k{font-family:var(--f-en);font-size:12px;letter-spacing:.18em;color:var(--gold)}
+.pr h3{font-weight:700;font-size:23px;line-height:1.3;margin:14px 0 10px}
+:root[data-l="en"] .pr h3{font-weight:600;font-size:20px}
+.pr p{margin:0;color:#cfccc4;font-size:16px;line-height:1.65}
+.pr small{display:block;margin-top:12px;font-size:13.5px;color:var(--dim)}
+.stations{border-top:1px solid var(--gold)}
+.st{display:grid;grid-template-columns:120px 1fr 1.6fr;gap:32px;padding-block:30px;border-bottom:1px solid var(--line);align-items:baseline}
+.st>*{min-width:0}
+.st .y{font-family:var(--f-en);font-size:14px;color:var(--dim)}
+.st.now .y{color:var(--gold)}
+.st h3{margin:0;font-weight:700;font-size:21px;line-height:1.35}
+:root[data-l="en"] .st h3{font-weight:600;font-size:19px}
+.st h3 small{display:block;font-weight:400;font-size:14.5px;color:var(--dim);margin-top:2px}
+.st blockquote{margin:0;font-size:clamp(19px,1.6vw,23px);line-height:1.5;color:var(--fg)}
+.st blockquote::before{content:"“";color:var(--gold);margin-inline-end:4px}
+:root:not([data-l="en"]) .st blockquote::before{content:"«"}
+.st p{margin:8px 0 0;font-size:15px;color:var(--dim)}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:70px}
+.badges span{border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14.5px;color:#d6d3cc;background:rgba(9,9,11,.4)}
+.badges span b{color:var(--gold-2);font-family:var(--f-en);font-weight:500;margin-inline-end:8px}
+@media (max-width:980px){.principles{grid-template-columns:1fr 1fr}.pr:nth-child(2){border-inline-end:0}.pr:nth-child(3){padding-inline-start:0}.pr:nth-child(n+3){border-top:1px solid var(--line)}.st{grid-template-columns:1fr;gap:6px}}
+@media (max-width:560px){.principles{grid-template-columns:1fr}.pr{border-inline-end:0!important;padding-inline:0!important}.pr+.pr{border-top:1px solid var(--line)}}
 </style>
 
 </head>
 <body>
-<canvas id="stage" aria-hidden="true"></canvas>
+<video id="film" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+  <source src="media/hero-4k.mp4" type="video/mp4">
+  <source src="https://videos.pexels.com/video-files/29718189/12778062_2560_1440_30fps.mp4" type="video/mp4">
+</video>
+<div class="tint" aria-hidden="true"></div>
 <div class="shade" aria-hidden="true"></div>
 <div class="wipe" id="wipe" aria-hidden="true"></div>
 <div class="pg" id="pg" aria-hidden="true"><b>01</b> / 05 · HOME</div>
@@ -210,21 +255,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
 <main>
 <section class="view hero" data-view="home">
-  <div class="cue" aria-hidden="true">SCROLL</div>
   <div class="wrap">
-    <div class="hero-grid">
+    <div class="tag">Data &amp; Strategy</div>
+    <p class="vision-line"><span lang="ar">البيانات لا تصف المستقبل، <em>بل تبنيه.</em></span><span lang="en">Data doesn&#39;t describe the future. <em>It builds it.</em></span></p>
+    <div class="hero-grid" style="margin-top:44px">
+      <div class="who"><h1 style="margin:0;font-size:inherit;letter-spacing:inherit"><b><span lang="ar">علي العريني</span><span lang="en">Ali Aloraini</span></b></h1><span>Data &amp; Strategy</span></div>
       <div>
-        <div class="tag">Data · Vision · Leadership</div>
-        <h1><span lang="ar">علي العريني</span><span lang="en">Ali Aloraini</span></h1>
-      </div>
-      <div>
-        <p><span lang="ar">أرى مستقبل المؤسسات في البيانات، وأبني طريقي لأقودها إليه. القرار الصحيح يبدأ من رقم صحيح.</span><span lang="en">I see the future of organisations in data, and I am building my way to lead them there. The right decision starts with the right number.</span></p>
-        <div class="meta">
-          <div><b>PMP®</b><span lang="ar">إدارة المشاريع</span><span lang="en">Project Management</span></div>
-          <div><b><span lang="ar">دار الهندسة</span><span lang="en">Dar Al-Handasah</span></b><span lang="ar">منذ 2025</span><span lang="en">Since 2025</span></div>
-          <div><b><span lang="ar">الرياض</span><span lang="en">Riyadh</span></b><span lang="ar">السعودية</span><span lang="en">Saudi Arabia</span></div>
-        </div>
-        <div class="enter"><a href="#about"><span lang="ar">اكتشف الرؤية</span><span lang="en">Explore the vision</span><i>→</i></a><a href="#career"><span lang="ar">المسيرة</span><span lang="en">Career</span><i>→</i></a></div>
+        <p><span lang="ar">أعمل لأقود مؤسسات تتخذ قراراتها بالبيانات، وتتحرك بثقة نحو ما لم يأتِ بعد.</span><span lang="en">I am building toward leading organisations that decide with data and move with confidence toward what has not arrived yet.</span></p>
+        <div class="enter"><a href="#about"><span lang="ar">الرؤية</span><span lang="en">The vision</span><i>→</i></a><a href="#career"><span lang="ar">المسيرة</span><span lang="en">The journey</span><i>→</i></a></div>
       </div>
     </div>
   </div>
@@ -235,28 +273,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
     <div class="sh">
       <div class="n">01 · <span lang="ar">الرؤية</span><span lang="en">Vision</span></div>
       <div>
-        <h2><span lang="ar">البيانات هي اللغة التي ستقود بها <em>المؤسسات القادمة.</em></span><span lang="en">Data is the language the next generation of organisations <em>will lead in.</em></span></h2>
-        <p class="lede"><span lang="ar">رأيت ذلك في كل مشروع عملت عليه قبل أن أسمّيه: في تحليل حركة السكان لتخطيط النقل العام، وفي نماذج BIM التي تُقرأ قبل أن تُبنى. هدفي أن أنقل هذا التفكير من المشروع إلى قيادة مؤسسة كاملة.</span><span lang="en">I saw it in every project before I had a name for it: analysing population movement to plan public transport, and BIM models that are read before they are built. My aim is to carry that thinking from the project to the leadership of a whole organisation.</span></p>
+        <h2><span lang="ar">المؤسسات القادمة <em>ستقودها البيانات.</em> وأنا أستعد لأقود إحداها.</span><span lang="en">The next generation of organisations <em>will be led by data.</em> I intend to lead one.</span></h2>
+        <p class="lede"><span lang="ar">رأيت القرار يُصنع في أماكن مختلفة: في شراكات وطنية، وفي مشاريع بحجم مدن، وفي مكاتب تصميم دولية. وفي كل مرة كان الفرق واحدًا: من يقرأ البيانات بوضوح يرى أبعد، ويقرر أسرع، ويخطئ أقل.</span><span lang="en">I have watched decisions being made in very different places: national partnerships, city-scale projects, international design offices. Every time, the difference was the same. Whoever reads the data clearly sees further, decides faster and errs less.</span></p>
       </div>
     </div>
-    <div class="evid">
-      <div class="ev"><b>PMP<small>®</small></b><span lang="ar">محترف إدارة مشاريع، PMI 2025</span><span lang="en">Project Management Professional, PMI 2025</span></div>
-      <div class="ev"><b>02</b><span lang="ar">بلدان: مشاريع في السعودية ورومانيا</span><span lang="en">Countries: projects in Saudi Arabia and Romania</span></div>
-      <div class="ev"><b>05</b><span lang="ar">جهات عمل في أربع سنوات</span><span lang="en">Organisations in four years</span></div>
-      <div class="ev"><b>4.19<small>/5</small></b><span lang="ar">معدل البكالوريوس، جامعة الملك سعود</span><span lang="en">B.Eng. GPA, King Saud University</span></div>
-    </div>
   </div>
-
-  <div class="wrap lift" style="margin-top:140px">
+  <div class="wrap lift" style="margin-top:120px">
     <div class="sh">
-      <div class="n">01 · <span lang="ar">المنهج</span><span lang="en">Approach</span></div>
-      <h2><span lang="ar">أربعة أسس <em>أبني عليها قيادتي</em></span><span lang="en">Four foundations <em>for how I lead</em></span></h2>
+      <div class="n">02 · <span lang="ar">مبادئ</span><span lang="en">Principles</span></div>
+      <h2><span lang="ar">أربعة مبادئ <em>أقود بها</em></span><span lang="en">Four principles <em>I lead by</em></span></h2>
     </div>
-    <div class="insights">
-      <div class="ins"><div class="k">01 · NUMBERS</div><h3><span lang="ar">التفكير بالأرقام</span><span lang="en">Thinking in numbers</span></h3><p><span lang="ar">حصر الكميات وجداول BOQ وتحسين أعمال الحفر والردم، وتحليل حركة السكان وتوقّعها.</span><span lang="en">Quantity take-offs, BOQs, earthworks optimisation, and analysing and forecasting population movement.</span></p></div>
-      <div class="ins"><div class="k">02 · MODELS</div><h3><span lang="ar">النماذج الرقمية</span><span lang="en">Digital models</span></h3><p><span lang="ar">نمذجة BIM وCivil 3D، ومراجعة النماذج وكشف التعارضات في Navisworks.</span><span lang="en">BIM and Civil 3D modelling, model review and clash detection in Navisworks.</span></p></div>
-      <div class="ins"><div class="k">03 · PEOPLE</div><h3><span lang="ar">قيادة الفرق</span><span lang="en">Leading across teams</span></h3><p><span lang="ar">تنسيق بين الإنشاءات والتصريف والأنفاق والمرافق والاتصالات، وتعامل مباشر مع العملاء.</span><span lang="en">Coordinating structures, drainage, tunnels, utilities and telecoms, and working directly with clients.</span></p></div>
-      <div class="ins"><div class="k">04 · DELIVERY</div><h3><span lang="ar">انضباط التنفيذ</span><span lang="en">Disciplined delivery</span></h3><p><span lang="ar">PMP، مع تدريب في إدارة المخاطر من بكه والهيئة السعودية للمهندسين.</span><span lang="en">PMP, with risk management training from Bakkah and the Saudi Council of Engineers.</span></p></div>
+    <div class="principles">
+      <div class="pr"><div class="k">01</div><h3><span lang="ar">القرار قبل التقرير</span><span lang="en">Decisions over reports</span></h3><p><span lang="ar">قيمة الرقم في القرار الذي يصنعه، لا في الجدول الذي يملؤه.</span><span lang="en">A number is worth the decision it drives, not the table it fills.</span></p><small><span lang="ar">من تحليل حركة السكان لتخطيط النقل العام في HDR.</span><span lang="en">From analysing population movement for public transport planning at HDR.</span></small></div>
+      <div class="pr"><div class="k">02</div><h3><span lang="ar">نموذج واحد للحقيقة</span><span lang="en">One model of the truth</span></h3><p><span lang="ar">حين يرى الجميع البيانات نفسها، تختفي نصف الخلافات قبل أن تبدأ.</span><span lang="en">When everyone sees the same data, half the arguments disappear before they start.</span></p><small><span lang="ar">من نماذج BIM التي تجمع التخصصات في دار الهندسة.</span><span lang="en">From the BIM models that unite disciplines at Dar Al-Handasah.</span></small></div>
+      <div class="pr"><div class="k">03</div><h3><span lang="ar">الوضوح يصنع السرعة</span><span lang="en">Clarity creates speed</span></h3><p><span lang="ar">الفريق الذي يفهم الهدف لا يحتاج إلى من يدفعه.</span><span lang="en">A team that understands the goal does not need to be pushed.</span></p><small><span lang="ar">من قيادة التنسيق في مواقع الرياض الخضراء والقدية.</span><span lang="en">From coordinating sites at Green Riyadh and Qiddiya.</span></small></div>
+      <div class="pr"><div class="k">04</div><h3><span lang="ar">الأثر هو المقياس</span><span lang="en">Impact is the measure</span></h3><p><span lang="ar">الخطة الجيدة تُقاس بما تغيّره، والمخاطرة المحسوبة جزء منها.</span><span lang="en">A good plan is measured by what it changes, and calculated risk is part of it.</span></p><small><span lang="ar">محترف إدارة مشاريع PMP، وتدريب في إدارة المخاطر.</span><span lang="en">PMP certified, with training in risk management.</span></small></div>
     </div>
   </div>
 </section>
@@ -264,54 +295,41 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <section class="view brief" data-view="career">
   <div class="wrap lift">
     <div class="sh">
-      <div class="n">02 · <span lang="ar">المسيرة</span><span lang="en">Journey</span></div>
-      <h2><span lang="ar">خمس محطات، <em>وكل واحدة أوسع</em></span><span lang="en">Five roles, <em>each one wider</em></span></h2>
+      <div class="n">03 · <span lang="ar">المسيرة</span><span lang="en">Journey</span></div>
+      <h2><span lang="ar">محطات <em>صنعت نظرتي</em></span><span lang="en">The stations that <em>shaped my view</em></span></h2>
     </div>
-    <div class="tbl">
-      <div class="tr now"><span class="y">2025 —</span><h3><span lang="ar">دار الهندسة</span><span lang="en">Dar Al-Handasah</span></h3><span class="r"><span lang="ar">مهندس تصميم طرق وطرق سريعة</span><span lang="en">Road &amp; Highway Design Engineer</span></span><p><span lang="ar">نماذج BIM وCivil 3D وكميات وتقارير لمشاريع في السعودية ورومانيا.</span><span lang="en">BIM and Civil 3D models, quantities and reports for projects in Saudi Arabia and Romania.</span></p></div>
-      <div class="tr"><span class="y">2024 — 25</span><h3><span lang="ar">ماركو</span><span lang="en">MARCO</span></h3><span class="r"><span lang="ar">مهندس مدني · الرياض الخضراء</span><span lang="en">Civil Engineer · Green Riyadh</span></span><p><span lang="ar">تنسيق الموقع ومتابعة التقدم والموارد.</span><span lang="en">Site coordination, progress and resource tracking.</span></p></div>
-      <div class="tr"><span class="y">2024</span><h3><span lang="ar">ربيعة جاردن</span><span lang="en">Rabiah Garden</span></h3><span class="r"><span lang="ar">مهندس مدني · سكس فلاغز القدية</span><span lang="en">Civil Engineer · Six Flags Qiddiya</span></span><p><span lang="ar">إشراف ميداني وتفتيش على الجودة.</span><span lang="en">Site supervision and quality inspections.</span></p></div>
-      <div class="tr"><span class="y">2023 — 24</span><h3>HDR</h3><span class="r"><span lang="ar">مهندس مدني · تمهير</span><span lang="en">Civil Engineer · Tamheer</span></span><p><span lang="ar">تحليل حركة السكان وتوقّعها، وتقارير لتخطيط النقل العام.</span><span lang="en">Population movement analysis and forecasting for public transport planning.</span></p></div>
-      <div class="tr"><span class="y">2022 — 23</span><h3><span lang="ar">المركز الوطني للغطاء النباتي</span><span lang="en">National Center for Vegetation Cover</span></h3><span class="r"><span lang="ar">منسق شراكات · تمهير</span><span lang="en">Partnerships Coordinator · Tamheer</span></span><p><span lang="ar">تنسيق الشراكات ومذكرات التفاهم.</span><span lang="en">Partnership coordination and MoUs.</span></p></div>
+    <div class="stations">
+      <div class="st now"><span class="y">2025 —</span><h3><span lang="ar">دار الهندسة</span><span lang="en">Dar Al-Handasah</span><small><span lang="ar">السعودية ورومانيا</span><span lang="en">Saudi Arabia and Romania</span></small></h3><div><blockquote><span lang="ar">النموذج الرقمي لغة مشتركة بين عشرات التخصصات.</span><span lang="en">A digital model is a common language across dozens of disciplines.</span></blockquote><p><span lang="ar">مشاريع نقل كبرى من دراسة الجدوى حتى التصميم التفصيلي.</span><span lang="en">Major transport projects from feasibility to detailed design.</span></p></div></div>
+      <div class="st"><span class="y">2024 — 25</span><h3><span lang="ar">ماركو</span><span lang="en">MARCO</span><small><span lang="ar">الرياض الخضراء</span><span lang="en">Green Riyadh</span></small></h3><div><blockquote><span lang="ar">الخطة لا تساوي شيئًا من غير متابعة يومية.</span><span lang="en">A plan is worth nothing without daily follow-through.</span></blockquote><p><span lang="ar">مشروع وطني بحجم مدينة.</span><span lang="en">A national, city-scale programme.</span></p></div></div>
+      <div class="st"><span class="y">2024</span><h3><span lang="ar">ربيعة جاردن</span><span lang="en">Rabiah Garden</span><small><span lang="ar">سكس فلاغز القدية</span><span lang="en">Six Flags Qiddiya</span></small></h3><div><blockquote><span lang="ar">الجودة تُصنع في الموقع، لا في التقرير.</span><span lang="en">Quality is made on site, not in the report.</span></blockquote><p><span lang="ar">أحد أبرز مشاريع الترفيه في المملكة.</span><span lang="en">One of the Kingdom&#39;s flagship entertainment projects.</span></p></div></div>
+      <div class="st"><span class="y">2023 — 24</span><h3>HDR<small><span lang="ar">تخطيط النقل العام</span><span lang="en">Public transport planning</span></small></h3><div><blockquote><span lang="ar">أول مرة رأيت البيانات تصنع قرار مدينة.</span><span lang="en">The first time I saw data shape a city&#39;s decision.</span></blockquote><p><span lang="ar">تحليل حركة السكان وتوقّعها بين المناطق.</span><span lang="en">Analysing and forecasting population movement between areas.</span></p></div></div>
+      <div class="st"><span class="y">2022 — 23</span><h3><span lang="ar">المركز الوطني لتنمية الغطاء النباتي</span><span lang="en">National Center for Vegetation Cover</span><small><span lang="ar">الشراكات</span><span lang="en">Partnerships</span></small></h3><div><blockquote><span lang="ar">الثقة بين المؤسسات تُبنى كما تُبنى المشاريع.</span><span lang="en">Trust between institutions is built the way projects are.</span></blockquote><p><span lang="ar">شراكات ومذكرات تفاهم لبرامج بيئية وطنية.</span><span lang="en">Partnerships and MoUs for national environmental programmes.</span></p></div></div>
     </div>
-  </div>
-
-  <div class="wrap lift" style="margin-top:140px">
-    <div class="sh">
-      <div class="n">02 · <span lang="ar">المؤهلات</span><span lang="en">Credentials</span></div>
-      <h2><span lang="ar">أساس <em>متين</em></span><span lang="en">A solid <em>foundation</em></span></h2>
-    </div>
-    <div class="creds">
-      <div class="cr"><span class="k">PMP®</span><h3><span lang="ar">محترف إدارة المشاريع</span><span lang="en">Project Management Professional</span></h3><p>PMI · 2025</p></div>
-      <div class="cr"><span class="k">SCE</span><h3><span lang="ar">مهندس مشارك</span><span lang="en">Associate Civil Engineer</span></h3><p><span lang="ar">الهيئة السعودية للمهندسين · 2025</span><span lang="en">Saudi Council of Engineers · 2025</span></p></div>
-      <div class="cr"><span class="k">B.Eng.</span><h3><span lang="ar">الهندسة المدنية</span><span lang="en">Civil Engineering</span></h3><p><span lang="ar">جامعة الملك سعود · 2022</span><span lang="en">King Saud University · 2022</span></p></div>
-      <div class="cr"><span class="k">RMP</span><h3><span lang="ar">إدارة المخاطر</span><span lang="en">Risk Management</span></h3><p><span lang="ar">بكه · 2025</span><span lang="en">Bakkah · 2025</span></p></div>
-    </div>
-    <div class="stack"><span>Excel</span><span>MATLAB</span><span>BIM</span><span>Civil 3D</span><span>Navisworks</span><span>InfraWorks</span><span>AutoCAD</span></div>
+    <div class="badges"><span><b>PMP®</b><span lang="ar">محترف إدارة المشاريع</span><span lang="en">Project Management Professional</span></span><span><b>SCE</b><span lang="ar">مهندس مشارك</span><span lang="en">Associate Engineer</span></span><span><b>KSU</b><span lang="ar">بكالوريوس الهندسة المدنية، 4.19 من 5</span><span lang="en">B.Eng. Civil Engineering, 4.19 / 5</span></span><span><b>RMP</b><span lang="ar">إدارة المخاطر</span><span lang="en">Risk Management</span></span></div>
   </div>
 </section>
 
 <section class="view brief" data-view="insights">
   <div class="wrap lift">
     <div class="sh">
-      <div class="n">03 · <span lang="ar">رؤى</span><span lang="en">Insights</span></div>
+      <div class="n">04 · <span lang="ar">رؤى</span><span lang="en">Insights</span></div>
       <div>
-        <h2><span lang="ar">أفكار عن <em>المستقبل</em> والبيانات والقيادة</span><span lang="en">Thinking on the <em>future</em>, data and leadership</span></h2>
-        <p class="lede"><span lang="ar">مساحة لمقالاتي القادمة. العناوين أدناه مسودات مقترحة وستُنشر قريبًا.</span><span lang="en">A home for upcoming articles. The titles below are proposed drafts, coming soon.</span></p>
+        <h2><span lang="ar">أفكار عن <em>المستقبل</em> والقرار</span><span lang="en">Thinking on the <em>future</em> and decisions</span></h2>
+        <p class="lede"><span lang="ar">مقالاتي القادمة. العناوين أدناه مسودات وستُنشر قريبًا.</span><span lang="en">Upcoming articles. The titles below are drafts, coming soon.</span></p>
       </div>
     </div>
     <div class="arts">
-      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">من النموذج إلى القرار: ماذا تعلّم BIM القادة؟</span><span lang="en">From model to decision: what BIM teaches leaders</span></h3><p><span lang="ar">البيانات · القيادة</span><span lang="en">Data · Leadership</span></p></a>
-      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">المدن التي تتنبأ بحركة سكانها</span><span lang="en">Cities that forecast how people move</span></h3><p><span lang="ar">البيانات · المدن</span><span lang="en">Data · Cities</span></p></a>
-      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">لماذا يحتاج كل مشروع إلى قائد يقرأ الأرقام؟</span><span lang="en">Why every project needs a leader who reads numbers</span></h3><p><span lang="ar">إدارة المشاريع</span><span lang="en">Project management</span></p></a>
+      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">البيانات لا تصف المستقبل، بل تبنيه</span><span lang="en">Data doesn&#39;t describe the future. It builds it</span></h3><p><span lang="ar">القيادة · البيانات</span><span lang="en">Leadership · Data</span></p></a>
+      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">نموذج واحد للحقيقة: ماذا تعلّم BIM المؤسسات؟</span><span lang="en">One model of the truth: what BIM teaches organisations</span></h3><p><span lang="ar">الاستراتيجية</span><span lang="en">Strategy</span></p></a>
+      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">المدن التي تقرأ حركة سكانها</span><span lang="en">Cities that read how their people move</span></h3><p><span lang="ar">البيانات · المدن</span><span lang="en">Data · Cities</span></p></a>
     </div>
   </div>
 </section>
 
 <section class="contact view" data-view="contact">
   <div class="wrap lift">
-    <div class="tag">04 · Contact</div>
-    <h2 style="margin-top:20px"><span lang="ar">لنصنع قرارات <em>أذكى</em> معًا.</span><span lang="en">Let's make <em>smarter</em> decisions together.</span></h2>
+    <div class="tag">05 · Contact</div>
+    <h2 style="margin-top:20px"><span lang="ar">إذا كنت تبني مؤسسة تقودها البيانات، <em>فلنتحدث.</em></span><span lang="en">If you are building a data-led organisation, <em>let&#39;s talk.</em></span></h2>
     <a class="mail" href="mailto:AlorainiAli1@gmail.com">AlorainiAli1@gmail.com</a>
     <div class="links"><a href="https://www.linkedin.com/in/alorainiali" target="_blank" rel="noopener">LinkedIn ↗</a><span lang="ar">العربية · الإنجليزية</span><span lang="en">Arabic · English</span></div>
   </div>
@@ -320,7 +338,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
 <footer><div class="wrap"><span>© 2026 <span lang="ar">علي العريني</span><span lang="en">Ali Aloraini</span></span><span style="direction:ltr">alialoraini.sa</span></div></footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
   var root=document.documentElement,reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,small=innerWidth<900;
@@ -353,91 +370,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   function readState(){document.body.classList.toggle("reading",window.__view!=="home"||scrollY>innerHeight*.55)}
   addEventListener("scroll",readState,{passive:true});readState();
 
-  if(!window.THREE)return;
-  var T=THREE,cv=document.getElementById("stage"),R;
-  try{R=new T.WebGLRenderer({canvas:cv,antialias:true,alpha:true,powerPreference:"high-performance"})}catch(e){return}
-  var DPR=devicePixelRatio||1,q=Math.min(DPR,small?2:2.5),qMax=Math.min(small?2.5:3,DPR*1.5),qMin=Math.min(1,DPR);
-  R.setPixelRatio(q);R.outputEncoding=T.sRGBEncoding;R.toneMapping=T.ACESFilmicToneMapping;R.toneMappingExposure=1.08;R.physicallyCorrectLights=true;
-  var scene=new T.Scene(),cam=new T.PerspectiveCamera(32,1,.1,120);cam.position.set(0,0,15);
 
-  /* studio lighting baked into a reflection map */
-  var env=new T.Scene();env.add(new T.Mesh(new T.BoxGeometry(40,24,40),new T.MeshBasicMaterial({color:0x050506,side:T.BackSide})));
-  function box(w,h,x,y,z,c,i){var m=new T.Mesh(new T.PlaneGeometry(w,h),new T.MeshBasicMaterial({color:new T.Color(c).multiplyScalar(i),side:T.DoubleSide}));m.position.set(x,y,z);m.lookAt(0,0,0);env.add(m)}
-  box(16,3,0,11,0,0xffffff,6);box(6,14,-16,0,5,0xffdcb0,3.4);box(4,12,15,1,-6,0xd0dcff,2);box(2,16,-8,2,-15,0xffffff,4);box(2,16,8,2,-15,0xffe6c0,3);box(12,3,0,-3,16,0xffffff,1.2);
-  var pm=new T.PMREMGenerator(R);scene.environment=pm.fromScene(env,.025).texture;
-
-  var chrome=new T.MeshStandardMaterial({color:0xffffff,metalness:1,roughness:.1});
-  var gold=new T.MeshStandardMaterial({color:0xD9B878,metalness:1,roughness:.18});
-  var glass=new T.MeshPhysicalMaterial({color:0xd8dfeb,metalness:.1,roughness:.03,transparent:true,opacity:.1,clearcoat:1,clearcoatRoughness:.02,envMapIntensity:3,depthWrite:false,side:T.DoubleSide});
-  var black=new T.MeshPhysicalMaterial({color:0x0b0b0d,metalness:.3,roughness:.3,clearcoat:1,clearcoatRoughness:.08});
-
-  var core=new T.Group();scene.add(core);
-  var ring=new T.Mesh(new T.TorusGeometry(2.6,.34,96,256),chrome);core.add(ring);
-  var ring2=new T.Mesh(new T.TorusGeometry(3.25,.05,32,256),gold);ring2.rotation.x=1.2;core.add(ring2);
-  var orb=new T.Mesh(new T.SphereGeometry(1.55,128,128),glass);core.add(orb);
-  var heart=new T.Mesh(new T.SphereGeometry(.42,96,96),gold);core.add(heart);
-  var sats=[];for(var s=0;s<5;s++){var m=new T.Mesh(new T.SphereGeometry(s%2?.16:.24,64,64),s%2?gold:chrome);sats.push(m);core.add(m)}
-  var pill=new T.Mesh(new T.CylinderGeometry(.3,.3,1.5,64),black);(function(){var cg=new T.SphereGeometry(.3,48,24),c1=new T.Mesh(cg,black),c2=new T.Mesh(cg,black);c1.position.y=.75;c2.position.y=-.75;pill.add(c1);pill.add(c2)})();core.add(pill);
-
-  /* data streams: thousands of points travelling on tilted orbits through the ring */
-  var NS=small?16:26,PER=small?300:520,N=NS*PER,pos=new Float32Array(N*3),col=new Float32Array(N*3),meta=[];
-  for(var k=0;k<NS;k++){var r=2.1+Math.random()*2.6,tx=(Math.random()-.5)*2.4,tz=(Math.random()-.5)*1.6,sp=(.04+Math.random()*.06)*(Math.random()<.5?-1:1),g=k%3===0;meta.push({r:r,tx:tx,tz:tz,sp:sp,g:g,e:.75+Math.random()*.35})}
-  var ph=new Float32Array(N),jit=new Float32Array(N*3);
-  for(var i=0;i<N;i++){var mk=meta[Math.floor(i/PER)],u=(i%PER)/PER;ph[i]=u+Math.random()*.004;jit[i*3]=(Math.random()-.5)*.05;jit[i*3+1]=(Math.random()-.5)*.05;jit[i*3+2]=(Math.random()-.5)*.05;
-    var tail=Math.pow((i%PER)/PER,1.6),b=mk.g?[.88,.72,.45]:[.9,.9,.92];var L=.4+.9*tail;col[i*3]=b[0]*L;col[i*3+1]=b[1]*L;col[i*3+2]=b[2]*L}
-  var sgeo=new T.BufferGeometry();sgeo.setAttribute("position",new T.BufferAttribute(pos,3));sgeo.setAttribute("color",new T.BufferAttribute(col,3));
-  var sc=document.createElement("canvas");sc.width=sc.height=64;var sx=sc.getContext("2d"),gr=sx.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,"rgba(255,255,255,1)");gr.addColorStop(.3,"rgba(255,255,255,.85)");gr.addColorStop(.65,"rgba(255,255,255,.12)");gr.addColorStop(1,"rgba(255,255,255,0)");sx.fillStyle=gr;sx.fillRect(0,0,64,64);
-  var smat=new T.PointsMaterial({size:small?.09:.085,map:new T.CanvasTexture(sc),vertexColors:true,transparent:true,depthWrite:false,blending:T.AdditiveBlending,sizeAttenuation:true});
-  var streams=new T.Points(sgeo,smat);core.add(streams);
-  // fine dust for depth
-  var DN=small?600:1400,dpos=new Float32Array(DN*3);for(var d=0;d<DN;d++){dpos[d*3]=(Math.random()-.5)*40;dpos[d*3+1]=(Math.random()-.5)*24;dpos[d*3+2]=-Math.random()*30}
-  var dgeo=new T.BufferGeometry();dgeo.setAttribute("position",new T.BufferAttribute(dpos,3));
-  var dust=new T.Points(dgeo,new T.PointsMaterial({size:.05,map:smat.map,color:0x8a8478,transparent:true,opacity:.55,depthWrite:false,blending:T.AdditiveBlending}));scene.add(dust);
-
-  function size(){R.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
-  size();addEventListener("resize",function(){small=innerWidth<900;size()});
-
-  var poses={home:[0,.15,0,0],about:[3.9,.2,-4,1],career:[-4,.3,-4.6,2],insights:[0,1.9,-6.5,3],contact:[0,.1,-2.2,4]},px=0,py=.15,pz=0,pr=0;
-  var sp=0,tsp=0,mx=0,my=0,tmx=0,tmy=0,intro=reduce?1:0,t0=performance.now(),last=0,fc=0,acc=0;
-  function onS(){tsp=Math.min(1,scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight))}
-  addEventListener("scroll",onS,{passive:true});onS();sp=tsp;
-  addEventListener("pointermove",function(e){tmx=e.clientX/innerWidth-.5;tmy=e.clientY/innerHeight-.5},{passive:true});
-  function ease(x){return 1-Math.pow(1-x,4)}
-  var e3=new T.Euler(),m4=new T.Matrix4(),v=new T.Vector3();
-  function frame(now){
-    var t=(now-t0)/1000,dt=Math.min(.05,last?(now-last)/1000:.016);last=now;
-    var kS=1-Math.pow(.05,dt),kM=1-Math.pow(.12,dt),kP=1-Math.pow(.18,dt);
-    sp+=(tsp-sp)*kS;mx+=(tmx-mx)*kM;my+=(tmy-my)*kM;
-    if(intro<1)intro=Math.min(1,intro+dt/3.2);var ie=ease(intro);
-    var calm=reduce?0:t;
-
-    // composition: centred in the hero, drifts aside and recedes as the brief begins
-    var side=(root.dir==="rtl"?-1:1),P=poses[window.__view]||poses.home,a=Math.min(1,scrollY/Math.max(1,innerHeight));
-    var tx=small?0:P[0]*side,ty=small?P[1]*.5+(P===poses.home?.9:2.2):P[1],tz=P[2]-a*1.5;
-    px+=(tx-px)*kP;py+=(ty-py)*kP;pz+=(tz-pz)*kP;pr+=(P[3]-pr)*kP;
-    core.position.set(px,py,pz);
-    var sc0=(small?.62:1)*(0.82+.18*ie);core.scale.setScalar(sc0);
-    core.rotation.set(-.12+my*.12+pr*.5,calm*.05+mx*.25+pr*1.6,0);
-    ring.rotation.set(1.05+Math.sin(calm*.12)*.08,calm*.06,.35);
-    ring2.rotation.set(1.2,calm*-.09,.2+Math.sin(calm*.1)*.1);
-    heart.position.y=Math.sin(calm*.6)*.06;
-    sats.forEach(function(m,j){var an=calm*(.12+j*.03)+j*1.26,rr=3.9+j*.35;m.position.set(Math.cos(an)*rr,Math.sin(an*1.3)*.9,Math.sin(an)*rr*.6)});
-    pill.position.set(-3.6,2.1,-1.5);pill.rotation.set(.4,0,-.8+Math.sin(calm*.2)*.1);
-
-    for(var k=0,i=0;k<NS;k++){var mk=meta[k];e3.set(mk.tx,calm*.01*k,mk.tz);m4.makeRotationFromEuler(e3);
-      for(var p=0;p<PER;p++,i++){var u=(ph[i]+calm*mk.sp)%1;if(u<0)u+=1;var an=u*6.2832,rr=mk.r*(1+.06*Math.sin(an*3+k));
-        v.set(Math.cos(an)*rr,Math.sin(an*2+k)*.18,Math.sin(an)*rr*mk.e).applyMatrix4(m4);
-        var spread=1+(1-ie)*3.5;pos[i*3]=v.x*spread+jit[i*3];pos[i*3+1]=v.y*spread+jit[i*3+1];pos[i*3+2]=v.z*spread+jit[i*3+2]}}
-    sgeo.attributes.position.needsUpdate=true;smat.opacity=ie;
-    dust.rotation.y=calm*.004+mx*.05;
-
-    cam.position.x=mx*.9;cam.position.y=-my*.6;cam.lookAt(0,0,0);
-    fc++;acc+=dt;if(acc>1.2){var fps=fc/acc;fc=0;acc=0;var nq=fps>57&&q<qMax?Math.min(qMax,q+.25):(fps<48&&q>qMin?Math.max(qMin,q-.25):q);if(nq!==q){q=nq;R.setPixelRatio(q);R.setSize(innerWidth,innerHeight,false)}}
-    R.render(scene,cam);
-    if(!reduce)requestAnimationFrame(frame);
+  /* background film: slow push-in on every page change */
+  var v=document.getElementById("film");
+  if(v){v.muted=true;var p=v.play&&v.play();if(p&&p.catch)p.catch(function(){});
+    if(reduce){try{v.pause()}catch(e){}}
+    v.addEventListener("error",function(){document.body.classList.add("nofilm")},true);
+    var lastSrc=v.querySelectorAll("source");lastSrc[lastSrc.length-1].addEventListener("error",function(){document.body.classList.add("nofilm")});
   }
-  requestAnimationFrame(frame);
-  if(reduce)addEventListener("scroll",function(){requestAnimationFrame(frame)},{passive:true});
+  addEventListener("hashchange",function(){if(reduce||!v)return;v.classList.remove("push");void v.offsetWidth;v.classList.add("push")});
 })();
 </script>
 
