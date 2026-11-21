@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>علي العريني</title>
+<meta name="description" content="علي العريني: مهندس يتّجه إلى قيادة المؤسسات بالبيانات. PMP، دار الهندسة، الرياض.">
+<meta name="theme-color" content="#0C0C0F">
+<meta property="og:title" content="علي العريني">
+<meta property="og:description" content="أتّجه إلى قيادة المؤسسات بالبيانات.">
+<meta property="og:url" content="https://alialoraini.sa/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://alialoraini.sa/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230C0C0F'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23D8C3A0' stroke-width='6'/%3E%3C/svg%3E">
+<style>html,body{margin:0}:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zain:wght@300;400;700&family=Big+Shoulders+Display:wght@500;700&display=swap">
+<style>
+/* Layout: a cinematic studio. A fixed 3D stage (chrome, glass, soft light) sits behind the page and re-composes itself for every chapter. Type stays calm and clear on top: one family, few sizes. */
+:root{
+  --bg:#0C0C0F; --bg-2:#15151A; --line:rgba(255,255,255,.09); --fg:#F3F1EC; --dim:#9C9A94; --warm:#D8C3A0;
+  --f:"Zain",system-ui,sans-serif; --f-num:"Big Shoulders Display","Zain",sans-serif;
+  color-scheme:dark; direction:rtl;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:radial-gradient(120% 90% at 30% 20%,#1b1b22 0%,var(--bg) 60%) fixed,var(--bg);color:var(--fg);font-family:var(--f);font-size:19px;line-height:1.7;font-weight:300;overflow-x:clip}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--warm);color:#111}
+:focus-visible{outline:1px solid var(--warm);outline-offset:4px}
+.pad{padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px))}
+.lbl{font-size:13px;letter-spacing:.04em;color:var(--dim);font-weight:400}
+.ch{font-family:var(--f-num);font-weight:500;font-size:13px;letter-spacing:.18em;color:var(--warm);direction:ltr;display:inline-block}
+
+#stage{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;pointer-events:none}
+.veil{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(80% 70% at 50% 50%,rgba(12,12,15,0) 30%,rgba(12,12,15,.55) 100%)}
+.chap .in{text-shadow:0 2px 24px rgba(0,0,0,.55)}
+.hd::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(12,12,15,.96) 40%,rgba(12,12,15,0));pointer-events:none}
+main,.hd,footer{position:relative;z-index:1}
+
+/* header */
+.hd{position:fixed;top:0;inset-inline:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding-top:calc(22px + env(safe-area-inset-top,0px));padding-bottom:18px}
+.hd .logo{font-weight:700;font-size:22px;letter-spacing:-.01em}
+.hd .logo span{color:var(--warm)}
+.hd nav{display:flex;gap:30px;font-size:16px;color:var(--dim)}
+.hd nav a{transition:color .3s}
+.hd nav a:hover{color:var(--fg)}
+.hd .cta{font-size:15px;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 20px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.04);transition:background .3s,color .3s}
+.hd .cta:hover{background:var(--fg);color:#111}
+
+/* chapters */
+.chap{min-height:100svh;display:flex;align-items:center;padding-block:140px}
+.chap .in{width:min(560px,100%)}
+.chap.end .in{margin-inline-start:auto}
+@media (min-width:901px){.chap.end .in{margin-left:96px}}
+h1{font-weight:700;font-size:clamp(58px,8.4vw,128px);line-height:1.02;letter-spacing:-.025em;margin:22px 0 22px}
+h2{font-weight:700;font-size:clamp(38px,4.8vw,68px);line-height:1.12;letter-spacing:-.02em;margin:18px 0 20px;text-wrap:balance}
+.lead{font-size:clamp(20px,1.7vw,24px);line-height:1.6;color:#dcd9d2;margin:0;max-width:34ch}
+p{margin:0}
+.body{color:var(--dim);max-width:46ch;margin-top:18px}
+.trio{display:flex;gap:26px;margin-top:34px;font-size:15px;color:var(--dim);flex-wrap:wrap}
+.trio b{display:block;color:var(--fg);font-weight:700;font-size:17px}
+.btns{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-size:16px;font-weight:400;transition:transform .4s cubic-bezier(.2,.7,.1,1),background .3s,color .3s}
+.btn.solid{background:var(--fg);color:#111}
+.btn.solid:hover{background:var(--warm)}
+.btn.glass{border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.05);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn:hover{transform:translateY(-2px)}
+
+/* glass panels */
+.glass{background:linear-gradient(150deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);border-radius:22px}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:34px}
+.pill{padding:22px 22px 24px;min-width:0}
+.pill .ch{font-size:11px}
+.pill h3{font-weight:700;font-size:21px;margin:10px 0 6px;line-height:1.3}
+.pill p{font-size:15.5px;color:var(--dim);line-height:1.6}
+
+.journey{margin-top:30px;display:grid;gap:0;border-top:1px solid var(--line)}
+.j{display:grid;grid-template-columns:86px 1fr;gap:18px;padding-block:18px;border-bottom:1px solid var(--line);align-items:baseline}
+.j>*{min-width:0}
+.j .y{font-family:var(--f-num);font-weight:500;font-size:16px;color:var(--dim);direction:ltr;text-align:right}
+.j h3{margin:0;font-weight:700;font-size:20px;line-height:1.35}
+.j h3 small{font-weight:400;font-size:15px;color:var(--dim);margin-inline-start:8px}
+.j p{font-size:15.5px;color:var(--dim);margin-top:2px}
+.j.now .y{color:var(--warm)}
+
+.creds{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+.cr{padding:20px 22px;min-width:0}
+.cr .k{font-family:var(--f-num);font-weight:700;font-size:40px;line-height:1;letter-spacing:.01em;direction:ltr;text-align:right;background:linear-gradient(180deg,#fff,#a9a6a0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cr h3{font-weight:700;font-size:17px;margin:10px 0 2px}
+.cr p{font-size:14.5px;color:var(--dim)}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;direction:ltr;justify-content:flex-end}
+.tools span{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:5px 14px;color:#d6d3cc}
+
+/* contact */
+.mail{display:inline-block;font-size:clamp(20px,2.2vw,28px);font-weight:400;direction:ltr;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:4px;margin-top:30px;overflow-wrap:anywhere;transition:border-color .3s,color .3s}
+.mail:hover{color:var(--warm);border-color:var(--warm)}
+.links{display:flex;gap:24px;margin-top:18px;font-size:16px;color:var(--dim);flex-wrap:wrap}
+.links a:hover{color:var(--fg)}
+footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);font-size:13px;color:var(--dim)}
+
+/* chapter rail */
+.rail{position:fixed;left:max(28px,env(safe-area-inset-left,0px));top:50%;transform:translateY(-50%);z-index:15;display:grid;gap:14px;direction:ltr}
+.rail a{display:flex;align-items:center;gap:10px;font-family:var(--f-num);font-size:12px;letter-spacing:.14em;color:rgba(255,255,255,.35);transition:color .3s}
+.rail a i{width:18px;height:1px;background:currentColor;transition:width .4s}
+.rail a.on{color:var(--fg)}
+.rail a.on i{width:40px}
+
+/* entrance: text is fully visible at rest; this only lifts it */
+@media (prefers-reduced-motion:no-preference){
+  .lift{transition:transform 1.2s cubic-bezier(.2,.75,.1,1)}
+  .lift.down{transform:translateY(40px)}
+}
+
+@media (max-width:900px){
+  .hd nav,.rail{display:none}
+  .veil{background:linear-gradient(0deg,rgba(12,12,15,.92) 0%,rgba(12,12,15,.55) 55%,rgba(12,12,15,.15) 100%)}
+  .chap{min-height:auto;padding-block:120px 80px;align-items:flex-end}
+  .chap:first-of-type{min-height:100svh}
+  .chap .in{width:100%}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .pillars,.creds{grid-template-columns:1fr}
+  .j{grid-template-columns:64px 1fr}
+}
+</style>
+
+</head>
+<body>
+<canvas id="stage" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+
+<header class="hd pad">
+  <a class="logo" href="#top">علي العريني<span>.</span></a>
+  <nav aria-label="الأقسام"><a href="#vision">الرؤية</a><a href="#pillars">أسس القيادة</a><a href="#journey">المسيرة</a><a href="#creds">المؤهلات</a></nav>
+  <a class="cta" href="#contact">تواصل</a>
+</header>
+
+<nav class="rail" aria-label="الفصول">
+  <a href="#top" class="on"><i></i>01</a><a href="#vision"><i></i>02</a><a href="#pillars"><i></i>03</a><a href="#journey"><i></i>04</a><a href="#creds"><i></i>05</a><a href="#contact"><i></i>06</a>
+</nav>
+
+<main>
+<section class="chap pad" id="top" data-k="0">
+  <div class="in">
+    <span class="ch">ALI A. ALORAINI</span>
+    <h1>علي العريني</h1>
+    <p class="lead">أتّجه إلى قيادة المؤسسات بالبيانات. أؤمن أن القرار الصحيح يبدأ من رقم صحيح، وأبني طريقي إليه بانضباط مدير المشاريع.</p>
+    <div class="trio">
+      <div><b>PMP®</b>إدارة المشاريع</div>
+      <div><b>دار الهندسة</b>منذ 2025</div>
+      <div><b>البيانات</b>وجهتي القيادية</div>
+    </div>
+    <div class="btns">
+      <a class="btn solid" href="#vision">اكتشف الرؤية</a>
+      <a class="btn glass" href="#contact">تواصل معي</a>
+    </div>
+  </div>
+</section>
+
+<section class="chap end pad" id="vision" data-k="1">
+  <div class="in lift">
+    <span class="ch">02 · VISION</span>
+    <h2>البيانات هي اللغة التي ستقود بها المؤسسات القادمة.</h2>
+    <p class="lead">ورأيت ذلك في كل مشروع عملت عليه، قبل أن أسمّيه.</p>
+    <p class="body">في HDR حللت حركة السكان بين المناطق وتوقّعتها لدعم تخطيط النقل العام. وفي دار الهندسة أعمل على نماذج BIM وCivil 3D، وهي في جوهرها بيانات: أسطح وكميات وتعارضات تُقرأ قبل أن تُبنى. هدفي أن أنقل هذا التفكير من المشروع إلى قيادة مؤسسة كاملة.</p>
+  </div>
+</section>
+
+<section class="chap pad" id="pillars" data-k="2">
+  <div class="in lift" style="width:min(640px,100%)">
+    <span class="ch">03 · DATA × LEADERSHIP</span>
+    <h2>أسس أبني عليها قيادتي</h2>
+    <div class="pillars">
+      <div class="pill glass"><span class="ch">01</span><h3>التفكير بالأرقام</h3><p>حصر الكميات وجداول BOQ وتحسين أعمال الحفر والردم، وتحليل حركة السكان وتوقّعها.</p></div>
+      <div class="pill glass"><span class="ch">02</span><h3>النماذج الرقمية</h3><p>نمذجة BIM وCivil 3D، ومراجعة النماذج وكشف التعارضات في Navisworks.</p></div>
+      <div class="pill glass"><span class="ch">03</span><h3>قيادة الفرق</h3><p>أنسّق بين تخصصات الإنشاءات والتصريف والأنفاق والمرافق والاتصالات، وأتعامل مباشرة مع العملاء.</p></div>
+      <div class="pill glass"><span class="ch">04</span><h3>انضباط التنفيذ</h3><p>محترف إدارة مشاريع PMP، مع تدريب في إدارة المخاطر من بكه والهيئة السعودية للمهندسين.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="chap end pad" id="journey" data-k="3">
+  <div class="in lift">
+    <span class="ch">04 · JOURNEY</span>
+    <h2>خمس محطات، وكل محطة أوسع من التي قبلها</h2>
+    <div class="journey">
+      <div class="j now"><span class="y">2025 —</span><div><h3>دار الهندسة<small>تصميم الطرق والطرق السريعة</small></h3><p>نماذج BIM وCivil 3D وكميات وتقارير لمشاريع في السعودية ورومانيا.</p></div></div>
+      <div class="j"><span class="y">2024</span><div><h3>ماركو<small>مشروع الرياض الخضراء</small></h3><p>تنسيق الموقع ومتابعة التقدم والموارد.</p></div></div>
+      <div class="j"><span class="y">2024</span><div><h3>ربيعة جاردن<small>سكس فلاغز القدية</small></h3><p>إشراف ميداني وتفتيش على الجودة.</p></div></div>
+      <div class="j"><span class="y">2023</span><div><h3>HDR<small>برنامج تمهير</small></h3><p>تحليل حركة السكان وتوقّعها، وتقارير لتخطيط النقل العام.</p></div></div>
+      <div class="j"><span class="y">2022</span><div><h3>المركز الوطني لتنمية الغطاء النباتي<small>تمهير</small></h3><p>تنسيق الشراكات ومذكرات التفاهم.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="chap pad" id="creds" data-k="4">
+  <div class="in lift">
+    <span class="ch">05 · CREDENTIALS</span>
+    <h2>أساس متين</h2>
+    <div class="creds">
+      <div class="cr glass"><div class="k">PMP®</div><h3>محترف إدارة المشاريع</h3><p>PMI · 2025</p></div>
+      <div class="cr glass"><div class="k">SCE</div><h3>مهندس مشارك</h3><p>الهيئة السعودية للمهندسين · 2025</p></div>
+      <div class="cr glass"><div class="k">4.19</div><h3>بكالوريوس الهندسة المدنية</h3><p>جامعة الملك سعود · من 5</p></div>
+      <div class="cr glass"><div class="k">RMP</div><h3>إدارة المخاطر</h3><p>بكه · 2025</p></div>
+    </div>
+    <div class="tools"><span>Excel</span><span>MATLAB</span><span>BIM</span><span>Civil 3D</span><span>Navisworks</span><span>InfraWorks</span><span>AutoCAD</span></div>
+  </div>
+</section>
+
+<section class="chap end pad" id="contact" data-k="5">
+  <div class="in lift">
+    <span class="ch">06 · CONTACT</span>
+    <h2>لنصنع قرارات أذكى معًا.</h2>
+    <p class="lead">للفرص القيادية في البيانات، والشراكات، والحديث عن المستقبل.</p>
+    <a class="mail" href="mailto:AlorainiAli1@gmail.com">AlorainiAli1@gmail.com</a>
+    <div class="links"><a href="https://www.linkedin.com/in/alorainiali" target="_blank" rel="noopener">LinkedIn ↗</a><span>العربية · English</span></div>
+  </div>
+</section>
+</main>
+
+<footer class="pad"><div class="row"><span>© 2026 علي العريني</span><span style="direction:ltr">alialoraini.sa</span></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,small=innerWidth<900;
+
+  /* chapter rail + entrance lift */
+  var chaps=[].slice.call(document.querySelectorAll(".chap")),rail=[].slice.call(document.querySelectorAll(".rail a"));
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var k=+e.target.dataset.k;rail.forEach(function(a,i){a.classList.toggle("on",i===k)})}})},{threshold:.5});
+    chaps.forEach(function(c){io.observe(c)});
+    if(!reduce){var lifts=[].slice.call(document.querySelectorAll(".lift"));lifts.forEach(function(l){if(l.getBoundingClientRect().top>innerHeight)l.classList.add("down")});
+      var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove("down");io2.unobserve(e.target)}})},{rootMargin:"0px 0px -10% 0px"});lifts.forEach(function(l){io2.observe(l)});}
+  }
+
+  if(!window.THREE)return;
+  var T=THREE,cv=document.getElementById("stage"),R;
+  try{R=new T.WebGLRenderer({canvas:cv,antialias:true,alpha:true,powerPreference:"high-performance"})}catch(e){return}
+  // adaptive supersampling: start at the screen's native density, climb toward 1.5x native while frames stay fast, step down if they don't
+  var DPR=devicePixelRatio||1,qMax=Math.min(small?2.5:3,DPR*1.5),qMin=Math.min(1,DPR),q=Math.min(DPR,small?2:2.5);
+  R.setPixelRatio(q);
+  R.outputEncoding=T.sRGBEncoding;R.toneMapping=T.ACESFilmicToneMapping;R.toneMappingExposure=1.05;R.physicallyCorrectLights=true;
+  var scene=new T.Scene(),cam=new T.PerspectiveCamera(35,1,.1,100);cam.position.set(0,0,12);
+
+  /* studio environment: a soft room with light boxes, baked to a reflection map */
+  var env=new T.Scene(),room=new T.Mesh(new T.BoxGeometry(30,20,30),new T.MeshBasicMaterial({color:0x070709,side:T.BackSide}));env.add(room);
+  function box(w,h,x,y,z,ry,c,i){var m=new T.Mesh(new T.PlaneGeometry(w,h),new T.MeshBasicMaterial({color:new T.Color(c).multiplyScalar(i),side:T.DoubleSide}));m.position.set(x,y,z);m.rotation.y=ry;m.lookAt(0,0,0);env.add(m)}
+  box(14,3,0,9,0,0,0xffffff,6);           // top strip
+  box(2,14,-7,2,-12,0,0xffffff,4);        // thin back strip for long highlights
+  box(2,14,7,2,-12,0,0xffffff,2.5);
+  box(6,12,-14,0,4,0,0xffe2c4,3.2);       // warm key, left
+  box(4,10,13,1,-6,0,0xc8d8ff,2.2);       // cool rim, right
+  box(10,4,0,-2,14,0,0xffffff,1.4);       // front fill
+  var pm=new T.PMREMGenerator(R),envMap=pm.fromScene(env,.03).texture;scene.environment=envMap;
+
+  var chrome=new T.MeshStandardMaterial({color:0xffffff,metalness:1,roughness:.12});
+  var gold=new T.MeshStandardMaterial({color:0xD8C3A0,metalness:1,roughness:.22});
+  var glass=new T.MeshPhysicalMaterial({color:0xcfd6e6,metalness:.1,roughness:.04,transparent:true,opacity:.1,clearcoat:1,clearcoatRoughness:.03,envMapIntensity:3,depthWrite:false,side:T.DoubleSide});
+  var glassBar=new T.MeshPhysicalMaterial({color:0xe9e4da,metalness:.15,roughness:.12,transparent:true,opacity:.55,clearcoat:1,clearcoatRoughness:.05,envMapIntensity:2});
+  var black=new T.MeshPhysicalMaterial({color:0x0d0d0f,metalness:.2,roughness:.35,clearcoat:1,clearcoatRoughness:.1});
+
+  var O={
+    ring:new T.Mesh(new T.TorusGeometry(1.5,.42,64,180),chrome),
+    sphere:new T.Mesh(new T.SphereGeometry(1.15,96,96),glass),
+    knot:new T.Mesh(new T.TorusKnotGeometry(.62,.2,220,32,2,3),gold),
+    pill:new T.Mesh(new T.CylinderGeometry(.42,.42,1.9,64,1),black),
+    b1:new T.Mesh(new T.SphereGeometry(.28,48,48),chrome),
+    b2:new T.Mesh(new T.SphereGeometry(.18,48,48),gold)
+  };
+  // round the pill ends
+  (function(){var cap=new T.SphereGeometry(.42,48,24),a=new T.Mesh(cap,black),b=new T.Mesh(cap,black);a.position.y=.95;b.position.y=-.95;O.pill.add(a);O.pill.add(b)})();
+  // data object: a 5x5 field of glass bars whose heights breathe like a live chart
+  var bars=new T.Group(),barList=[],bg=new T.BoxGeometry(.32,1,.32);bg.translate(0,.5,0);
+  for(var gx=0;gx<5;gx++)for(var gz=0;gz<5;gz++){var m=new T.Mesh(bg,(gx+gz)%4===0?gold:glassBar);m.position.set((gx-2)*.42,0,(gz-2)*.42);m.userData={p:gx*.9+gz*.55,h:.4+((gx*7+gz*3)%5)*.32};bars.add(m);barList.push(m)}
+  var base=new T.Mesh(new T.BoxGeometry(2.3,.06,2.3),chrome);base.position.y=-.03;bars.add(base);
+  O.bars=bars;
+  Object.keys(O).forEach(function(k){scene.add(O[k])});
+  scene.add(new T.AmbientLight(0xffffff,.15));
+  var key=new T.DirectionalLight(0xfff1df,2.2);key.position.set(-5,6,6);scene.add(key);
+
+  /* six compositions, one per chapter: [x,y,z,scale] — the camera dollies between them */
+  var K={
+    ring:  [[-3.1,.3,0,1.15],[2.9,.2,-1,.9],[-3.4,1.6,-2,.7],[3.2,-1.4,-1.5,.8],[-2.6,-.2,-.5,1],[2.4,.4,0,1.3]],
+    sphere:[[-1.7,-1.1,1.6,1],[1.4,-1.3,1.2,1.25],[-1.8,-.4,1.2,1.2],[2.2,1.2,.6,.9],[-3.6,1.6,-1,.8],[3.6,-1.2,1,.8]],
+    knot:  [[-4.6,1.9,-1.5,.8],[3.8,1.9,-2,1],[-4.4,-1.6,0,1.1],[1.6,-.4,1.8,1.1],[-1.6,-1.8,1.4,.9],[1.4,1.8,-1,.9]],
+    pill:  [[-2.2,2.4,-3,.8],[4.6,-.8,-2.5,.8],[-2.6,2.6,-3,.8],[4.4,1.6,-2,.9],[-4.2,-1.8,-1.5,1],[4.4,1.4,-2,.9]],
+    b1:    [[-4.4,-1.9,1,1],[1.7,2.1,0,1],[-1.2,-2.2,2,1],[2.9,2.6,-.5,1],[-1.2,2.3,.5,1],[1.7,-2.1,1.5,1]],
+    b2:    [[-.6,1.7,1,1],[4.2,1.2,.5,1],[-3.6,.4,2.4,1],[1.4,-2.4,1,1],[-3.2,-.6,2,1],[3.2,.2,2.2,1]],
+    bars:  [[-3.9,-2.6,-1,.9],[2.6,-.9,.4,1.25],[-2.9,-1.4,.6,1.35],[3.4,-2.6,-1,.9],[-2.4,-1.1,.6,1.3],[2.2,-2.8,-1.5,1]]
+  };
+  K.bars=K.bars.map(function(v){return [v[0],v[1],v[2],v[3]*.68]});
+  if(!small){Object.keys(K).forEach(function(k){K[k]=K[k].map(function(v){return [v[0]*1.12,v[1],v[2],v[3]]})})}
+  if(small){Object.keys(K).forEach(function(k){K[k]=K[k].map(function(v){return [v[0]*.45,v[1]*.7+1.6,v[2],v[3]*.72]})})}
+
+  function size(){R.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+  size();addEventListener("resize",size);
+
+  var prog=0,tp=0,mx=0,my=0,tmx=0,tmy=0,t0=performance.now();
+  function onS(){
+    // map scroll to chapter index with a hold in the middle of each chapter
+    var y=scrollY+innerHeight*.5,idx=0,f=0;
+    for(var i=0;i<chaps.length;i++){var c=chaps[i],top=c.offsetTop,h=c.offsetHeight;if(y>=top){idx=i;f=Math.min(1,(y-top)/h)}}
+    var hold=Math.max(0,Math.min(1,(f-.55)/.45));tp=Math.min(chaps.length-1,idx+hold);
+  }
+  addEventListener("scroll",onS,{passive:true});onS();prog=tp;
+  addEventListener("pointermove",function(e){tmx=e.clientX/innerWidth-.5;tmy=e.clientY/innerHeight-.5},{passive:true});
+  function ease(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}
+  var last=0,fc=0,acc=0;
+  function frame(now){
+    var t=(now-t0)/1000,dt=Math.min(.05,last?(now-last)/1000:.016);last=now;
+    var kP=1-Math.pow(.034,dt),kM=1-Math.pow(.09,dt);   // frame-rate independent easing
+    prog+=(tp-prog)*kP;mx+=(tmx-mx)*kM;my+=(tmy-my)*kM;
+    fc++;acc+=dt;if(acc>1.2){var fps=fc/acc;fc=0;acc=0;
+      var nq=fps>57&&q<qMax?Math.min(qMax,q+.25):(fps<48&&q>qMin?Math.max(qMin,q-.25):q);
+      if(nq!==q){q=nq;R.setPixelRatio(q);R.setSize(innerWidth,innerHeight,false)}}
+    var a=Math.floor(prog),b=Math.min(5,a+1),f=ease(prog-a);
+    Object.keys(O).forEach(function(k,n){
+      var A=K[k][a],B=K[k][b],o=O[k],fl=reduce?0:Math.sin(t*.7+n*1.3)*.12;
+      o.position.set(A[0]+(B[0]-A[0])*f,A[1]+(B[1]-A[1])*f+fl,A[2]+(B[2]-A[2])*f);
+      var s=A[3]+(B[3]-A[3])*f;o.scale.setScalar(s);
+    });
+    var spin=reduce?0:t;
+    O.ring.rotation.set(.9+prog*.6+my*.3,spin*.18+prog*.9,.3);
+    O.knot.rotation.set(spin*.25,spin*.32+prog,0);
+    O.pill.rotation.set(.5,0,-.7+prog*.5+Math.sin(spin*.4)*.1);
+    O.sphere.rotation.y=spin*.1;
+    O.bars.rotation.set(.38+my*.15,-.6+spin*.12+prog*.5,0);
+    barList.forEach(function(m){var d=m.userData,h=d.h+(reduce?0:Math.sin(t*1.1+d.p)*.35+.35);m.scale.y=Math.max(.08,h)});
+    cam.position.x=mx*1.4+Math.sin(prog*1.1)*.6;cam.position.y=-my*.9;cam.position.z=12-Math.sin(prog*.9)*1.2;
+    cam.lookAt(0,0,0);
+    R.render(scene,cam);
+    if(!reduce)requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  if(reduce)addEventListener("scroll",function(){prog=tp;requestAnimationFrame(frame)},{passive:true});
+})();
+</script>
+
+</body>
+</html>
