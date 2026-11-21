@@ -1,341 +1,443 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-l="ar">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>علي العريني</title>
-<meta name="description" content="علي العريني: مهندس يتّجه إلى قيادة المؤسسات بالبيانات. PMP، دار الهندسة، الرياض.">
-<meta name="theme-color" content="#0C0C0F">
-<meta property="og:title" content="علي العريني">
-<meta property="og:description" content="أتّجه إلى قيادة المؤسسات بالبيانات.">
+<title>علي العريني | Ali Aloraini</title>
+<meta name="description" content="علي العريني: أرى مستقبل المؤسسات في البيانات، وأبني طريقي لأقودها إليه. Ali Aloraini: building toward leading organisations with data.">
+<meta name="theme-color" content="#09090B">
+<meta property="og:title" content="علي العريني | Ali Aloraini">
+<meta property="og:description" content="أرى مستقبل المؤسسات في البيانات.">
 <meta property="og:url" content="https://alialoraini.sa/">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://alialoraini.sa/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230C0C0F'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23D8C3A0' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2309090B'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23C9A86A' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23C9A86A'/%3E%3C/svg%3E">
 <style>html,body{margin:0}:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zain:wght@300;400;700&family=Big+Shoulders+Display:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zain:wght@300;400;700&family=Inter+Tight:wght@300;400;500;600&display=swap">
 <style>
-/* Layout: a cinematic studio. A fixed 3D stage (chrome, glass, soft light) sits behind the page and re-composes itself for every chapter. Type stays calm and clear on top: one family, few sizes. */
+/* Layout: a cinematic studio stage fills the first screen; the rest reads like a global-consultancy brief: thin gold rules, numbered insights, generous margins. One gold accent. Arabic and English share one layout and swap direction. */
 :root{
-  --bg:#0C0C0F; --bg-2:#15151A; --line:rgba(255,255,255,.09); --fg:#F3F1EC; --dim:#9C9A94; --warm:#D8C3A0;
-  --f:"Zain",system-ui,sans-serif; --f-num:"Big Shoulders Display","Zain",sans-serif;
-  color-scheme:dark; direction:rtl;
+  --bg:#09090B; --bg-2:#111114; --line:rgba(255,255,255,.10); --fg:#F2F0EB; --dim:#9B9890; --gold:#C9A86A; --gold-2:#E6CF9F;
+  --f-ar:"Zain",system-ui,sans-serif; --f-en:"Inter Tight","Zain",system-ui,sans-serif;
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:clip}
-body{background:radial-gradient(120% 90% at 30% 20%,#1b1b22 0%,var(--bg) 60%) fixed,var(--bg);color:var(--fg);font-family:var(--f);font-size:19px;line-height:1.7;font-weight:300;overflow-x:clip}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-ar);font-size:19px;line-height:1.7;font-weight:300;overflow-x:clip;-webkit-font-smoothing:antialiased}
+:root[data-l="en"] body{font-family:var(--f-en);font-size:17px;line-height:1.65}
+:root:not([data-l="en"]) [lang="en"]{display:none!important}
+:root[data-l="en"] [lang="ar"]{display:none!important}
 a{color:inherit;text-decoration:none}
-::selection{background:var(--warm);color:#111}
-:focus-visible{outline:1px solid var(--warm);outline-offset:4px}
-.pad{padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px))}
-.lbl{font-size:13px;letter-spacing:.04em;color:var(--dim);font-weight:400}
-.ch{font-family:var(--f-num);font-weight:500;font-size:13px;letter-spacing:.18em;color:var(--warm);direction:ltr;display:inline-block}
+::selection{background:var(--gold);color:#111}
+:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
+.wrap{max-width:1240px;margin-inline:auto;padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px))}
+.tag{font-family:var(--f-en);font-size:11.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
 
 #stage{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;pointer-events:none}
-.veil{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(80% 70% at 50% 50%,rgba(12,12,15,0) 30%,rgba(12,12,15,.55) 100%)}
-.chap .in{text-shadow:0 2px 24px rgba(0,0,0,.55)}
-.hd::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(12,12,15,.96) 40%,rgba(12,12,15,0));pointer-events:none}
-main,.hd,footer{position:relative;z-index:1}
+.shade{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(75% 65% at 50% 45%,rgba(9,9,11,0) 35%,rgba(9,9,11,.7) 100%);transition:background 1s}
+.reading .shade{background:rgba(9,9,11,.6)}
+main,footer,.hd{position:relative;z-index:1}
 
 /* header */
-.hd{position:fixed;top:0;inset-inline:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding-top:calc(22px + env(safe-area-inset-top,0px));padding-bottom:18px}
-.hd .logo{font-weight:700;font-size:22px;letter-spacing:-.01em}
-.hd .logo span{color:var(--warm)}
-.hd nav{display:flex;gap:30px;font-size:16px;color:var(--dim)}
+.hd{position:fixed;top:0;inset-inline:0;z-index:20;padding-top:env(safe-area-inset-top,0px)}
+.hd::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(9,9,11,.9),rgba(9,9,11,0));pointer-events:none;z-index:-1}
+.hd .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:22px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:19px;letter-spacing:-.005em}
+.logo i{width:26px;height:26px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center}
+.logo i::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.hd nav{display:flex;gap:30px;font-size:15px;color:var(--dim)}
 .hd nav a{transition:color .3s}
 .hd nav a:hover{color:var(--fg)}
-.hd .cta{font-size:15px;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 20px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.04);transition:background .3s,color .3s}
-.hd .cta:hover{background:var(--fg);color:#111}
+.tools{display:flex;gap:10px;align-items:center}
+.lang{font-family:var(--f-en);font-size:12.5px;font-weight:500;letter-spacing:.08em;background:none;color:var(--fg);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 14px;cursor:pointer;transition:border-color .3s,color .3s}
+.lang:hover{border-color:var(--gold);color:var(--gold-2)}
+.cta{font-size:14.5px;background:var(--fg);color:#111;border-radius:999px;padding:8px 18px;transition:background .3s}
+.cta:hover{background:var(--gold-2)}
 
-/* chapters */
-.chap{min-height:100svh;display:flex;align-items:center;padding-block:140px}
-.chap .in{width:min(560px,100%)}
-.chap.end .in{margin-inline-start:auto}
-@media (min-width:901px){.chap.end .in{margin-left:96px}}
-h1{font-weight:700;font-size:clamp(58px,8.4vw,128px);line-height:1.02;letter-spacing:-.025em;margin:22px 0 22px}
-h2{font-weight:700;font-size:clamp(38px,4.8vw,68px);line-height:1.12;letter-spacing:-.02em;margin:18px 0 20px;text-wrap:balance}
-.lead{font-size:clamp(20px,1.7vw,24px);line-height:1.6;color:#dcd9d2;margin:0;max-width:34ch}
-p{margin:0}
-.body{color:var(--dim);max-width:46ch;margin-top:18px}
-.trio{display:flex;gap:26px;margin-top:34px;font-size:15px;color:var(--dim);flex-wrap:wrap}
-.trio b{display:block;color:var(--fg);font-weight:700;font-size:17px}
-.btns{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-size:16px;font-weight:400;transition:transform .4s cubic-bezier(.2,.7,.1,1),background .3s,color .3s}
-.btn.solid{background:var(--fg);color:#111}
-.btn.solid:hover{background:var(--warm)}
-.btn.glass{border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.05);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
-.btn:hover{transform:translateY(-2px)}
+/* hero: the scene is the hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:calc(46px + env(safe-area-inset-bottom,0px))}
+.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end;border-top:1px solid var(--line);padding-top:26px}
+.hero-grid>*{min-width:0}
+h1{font-weight:700;font-size:clamp(46px,6vw,92px);line-height:1.04;letter-spacing:-.02em;margin:12px 0 0}
+:root[data-l="en"] h1{font-weight:500;letter-spacing:-.035em}
+.hero p{margin:0;font-size:clamp(18px,1.5vw,21px);color:#d9d6cf;max-width:38ch}
+.hero .meta{display:flex;gap:28px;margin-top:22px;font-size:14px;color:var(--dim);flex-wrap:wrap}
+.hero .meta b{display:block;color:var(--fg);font-weight:600;font-size:15px}
+.cue{position:absolute;top:50%;inset-inline-end:max(28px,env(safe-area-inset-right,0px));transform:translateY(-50%);writing-mode:vertical-rl;font-family:var(--f-en);font-size:11px;letter-spacing:.3em;color:var(--dim)}
 
-/* glass panels */
-.glass{background:linear-gradient(150deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);border-radius:22px}
-.pillars{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:34px}
-.pill{padding:22px 22px 24px;min-width:0}
-.pill .ch{font-size:11px}
-.pill h3{font-weight:700;font-size:21px;margin:10px 0 6px;line-height:1.3}
-.pill p{font-size:15.5px;color:var(--dim);line-height:1.6}
+/* brief sections */
+section.brief{padding-block:140px}
+.sh{display:grid;grid-template-columns:260px 1fr;gap:48px;margin-bottom:56px}
+.sh>*{min-width:0}
+.sh .n{font-family:var(--f-en);font-size:13px;color:var(--dim);display:flex;gap:12px;align-items:center;padding-top:14px}
+.sh .n::before{content:"";width:28px;height:1px;background:var(--gold)}
+h2{font-weight:700;font-size:clamp(34px,4vw,58px);line-height:1.15;letter-spacing:-.015em;margin:0;max-width:20ch;text-wrap:balance}
+:root[data-l="en"] h2{font-weight:500;letter-spacing:-.03em}
+h2 em{font-style:normal;color:var(--gold-2)}
+.lede{grid-column:2;font-size:clamp(19px,1.5vw,22px);color:#d6d3cc;max-width:52ch;margin:22px 0 0}
 
-.journey{margin-top:30px;display:grid;gap:0;border-top:1px solid var(--line)}
-.j{display:grid;grid-template-columns:86px 1fr;gap:18px;padding-block:18px;border-bottom:1px solid var(--line);align-items:baseline}
-.j>*{min-width:0}
-.j .y{font-family:var(--f-num);font-weight:500;font-size:16px;color:var(--dim);direction:ltr;text-align:right}
-.j h3{margin:0;font-weight:700;font-size:20px;line-height:1.35}
-.j h3 small{font-weight:400;font-size:15px;color:var(--dim);margin-inline-start:8px}
-.j p{font-size:15.5px;color:var(--dim);margin-top:2px}
-.j.now .y{color:var(--warm)}
+/* insight cards */
+.insights{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--gold)}
+.ins{padding:28px 26px 30px 0;border-inline-end:1px solid var(--line);padding-inline-end:26px;min-width:0;background:linear-gradient(180deg,rgba(201,168,106,.05),rgba(201,168,106,0) 60%)}
+.ins:last-child{border-inline-end:0}
+.ins+.ins{padding-inline-start:26px}
+.ins .k{font-family:var(--f-en);font-size:12px;letter-spacing:.18em;color:var(--gold)}
+.ins h3{font-weight:700;font-size:21px;line-height:1.35;margin:16px 0 8px}
+:root[data-l="en"] .ins h3{font-weight:600;font-size:19px}
+.ins p{margin:0;font-size:15.5px;color:var(--dim);line-height:1.65}
 
-.creds{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
-.cr{padding:20px 22px;min-width:0}
-.cr .k{font-family:var(--f-num);font-weight:700;font-size:40px;line-height:1;letter-spacing:.01em;direction:ltr;text-align:right;background:linear-gradient(180deg,#fff,#a9a6a0);-webkit-background-clip:text;background-clip:text;color:transparent}
-.cr h3{font-weight:700;font-size:17px;margin:10px 0 2px}
-.cr p{font-size:14.5px;color:var(--dim)}
-.tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;direction:ltr;justify-content:flex-end}
-.tools span{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:5px 14px;color:#d6d3cc}
+/* evidence: big quiet numbers */
+.evid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:80px}
+.ev{border-top:1px solid var(--line);padding-top:18px;min-width:0}
+.ev b{display:block;font-family:var(--f-en);font-weight:300;font-size:clamp(44px,4.6vw,72px);line-height:1;letter-spacing:-.04em;color:var(--fg)}
+.ev b small{font-size:.38em;color:var(--gold);letter-spacing:0;margin-inline-start:4px}
+.ev span{display:block;margin-top:10px;font-size:14.5px;color:var(--dim)}
+
+/* journey table */
+.tbl{border-top:1px solid var(--gold)}
+.tr{display:grid;grid-template-columns:120px 1.1fr 1fr 1.4fr;gap:28px;padding-block:24px;border-bottom:1px solid var(--line);align-items:baseline;transition:background .4s}
+.tr>*{min-width:0}
+.tr:hover{background:rgba(255,255,255,.025)}
+.tr .y{font-family:var(--f-en);font-size:14px;color:var(--dim);font-variant-numeric:tabular-nums}
+.tr.now .y{color:var(--gold)}
+.tr h3{margin:0;font-weight:700;font-size:20px;line-height:1.35}
+:root[data-l="en"] .tr h3{font-weight:600;font-size:18px}
+.tr .r{color:#d6d3cc;font-size:16px}
+.tr p{margin:0;color:var(--dim);font-size:15.5px}
+
+/* credentials */
+.creds{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cr{border:1px solid var(--line);border-radius:18px;padding:24px;min-width:0;background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.cr .k{font-family:var(--f-en);font-weight:500;font-size:30px;letter-spacing:-.02em;background:linear-gradient(180deg,var(--gold-2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.cr h3{font-weight:700;font-size:17px;margin:12px 0 2px}
+:root[data-l="en"] .cr h3{font-weight:600}
+.cr p{margin:0;font-size:14.5px;color:var(--dim)}
+.stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;direction:ltr}
+:root:not([data-l="en"]) .stack{justify-content:flex-end}
+.stack span{font-family:var(--f-en);font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:6px 14px;color:#d6d3cc}
 
 /* contact */
-.mail{display:inline-block;font-size:clamp(20px,2.2vw,28px);font-weight:400;direction:ltr;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:4px;margin-top:30px;overflow-wrap:anywhere;transition:border-color .3s,color .3s}
-.mail:hover{color:var(--warm);border-color:var(--warm)}
-.links{display:flex;gap:24px;margin-top:18px;font-size:16px;color:var(--dim);flex-wrap:wrap}
+.contact{padding-block:160px 120px}
+.contact h2{font-size:clamp(44px,6vw,96px);max-width:14ch}
+.mail{display:inline-block;margin-top:40px;font-family:var(--f-en);font-weight:300;font-size:clamp(20px,2.4vw,32px);direction:ltr;border-bottom:1px solid var(--gold);padding-bottom:6px;overflow-wrap:anywhere;transition:color .3s}
+.mail:hover{color:var(--gold-2)}
+.links{display:flex;gap:28px;margin-top:22px;font-size:15px;color:var(--dim);flex-wrap:wrap}
 .links a:hover{color:var(--fg)}
-footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);font-size:13px;color:var(--dim)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);font-size:13px;color:var(--dim)}
 
-/* chapter rail */
-.rail{position:fixed;left:max(28px,env(safe-area-inset-left,0px));top:50%;transform:translateY(-50%);z-index:15;display:grid;gap:14px;direction:ltr}
-.rail a{display:flex;align-items:center;gap:10px;font-family:var(--f-num);font-size:12px;letter-spacing:.14em;color:rgba(255,255,255,.35);transition:color .3s}
-.rail a i{width:18px;height:1px;background:currentColor;transition:width .4s}
-.rail a.on{color:var(--fg)}
-.rail a.on i{width:40px}
-
-/* entrance: text is fully visible at rest; this only lifts it */
 @media (prefers-reduced-motion:no-preference){
-  .lift{transition:transform 1.2s cubic-bezier(.2,.75,.1,1)}
-  .lift.down{transform:translateY(40px)}
+  .lift{transition:transform 1.4s cubic-bezier(.16,.8,.12,1)}
+  .lift.down{transform:translateY(36px)}
 }
-
-@media (max-width:900px){
-  .hd nav,.rail{display:none}
-  .veil{background:linear-gradient(0deg,rgba(12,12,15,.92) 0%,rgba(12,12,15,.55) 55%,rgba(12,12,15,.15) 100%)}
-  .chap{min-height:auto;padding-block:120px 80px;align-items:flex-end}
-  .chap:first-of-type{min-height:100svh}
-  .chap .in{width:100%}
+@media (max-width:980px){
+  .hd nav{display:none}
+  .hero-grid,.sh{grid-template-columns:1fr;gap:16px}
+  .lede{grid-column:1}
+  .insights{grid-template-columns:1fr 1fr}
+  .ins:nth-child(2){border-inline-end:0}
+  .ins:nth-child(3){padding-inline-start:0}
+  .ins:nth-child(n+3){border-top:1px solid var(--line)}
+  .evid,.creds{grid-template-columns:1fr 1fr}
+  .tr{grid-template-columns:80px 1fr;gap:4px 18px}
+  .tr .r,.tr p{grid-column:2}
+  .cue{display:none}
+  section.brief{padding-block:96px}
 }
 @media (max-width:560px){
   body{font-size:17px}
-  .pillars,.creds{grid-template-columns:1fr}
-  .j{grid-template-columns:64px 1fr}
+  .insights{grid-template-columns:1fr}
+  .ins{border-inline-end:0!important;padding-inline:0!important}
+  .ins+.ins{border-top:1px solid var(--line)}
+  .cta{display:none}
 }
+
+.view{display:none;min-height:100svh}
+.view.on{display:block}
+.view.brief{padding-top:150px}
+.hero.view.on{display:flex}
+.hd nav a.on{color:var(--fg)}
+.hd nav a{position:relative}
+.hd nav a.on::after{content:"";position:absolute;inset-inline:0;bottom:-6px;height:1px;background:var(--gold)}
+.enter{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap}
+.enter a{display:inline-flex;align-items:center;gap:10px;font-size:15px;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:4px;transition:border-color .3s,color .3s}
+.enter a:first-child{color:var(--gold-2);border-color:var(--gold)}
+.enter a:hover{border-color:var(--gold-2)}
+.enter a i{font-style:normal;transition:transform .4s}
+:root:not([data-l="en"]) .enter a i{transform:scaleX(-1)}
+.enter a:hover i{transform:translateX(4px)}
+:root:not([data-l="en"]) .enter a:hover i{transform:scaleX(-1) translateX(4px)}
+.arts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.art{display:flex;flex-direction:column;gap:14px;min-height:260px;padding:26px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:border-color .4s,transform .6s cubic-bezier(.16,.8,.12,1);min-width:0}
+.art:hover{border-color:rgba(201,168,106,.5);transform:translateY(-4px)}
+.art .soon{font-family:var(--f-en);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px dashed rgba(201,168,106,.55);border-radius:999px;padding:3px 10px;align-self:flex-start}
+:root:not([data-l="en"]) .art .soon{font-family:var(--f-ar);letter-spacing:.02em;font-size:12.5px}
+.art h3{margin:auto 0 0;font-weight:700;font-size:23px;line-height:1.35}
+:root[data-l="en"] .art h3{font-weight:500;font-size:21px}
+.art p{margin:0;font-size:14px;color:var(--dim)}
+/* cinematic page transition */
+.wipe{position:fixed;inset:0;z-index:60;pointer-events:none;background:var(--bg);opacity:0;transition:opacity .55s cubic-bezier(.7,0,.3,1)}
+.wipe::after{content:"";position:absolute;top:50%;inset-inline:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform .7s cubic-bezier(.7,0,.3,1)}
+.wipe.in{opacity:.92}
+.wipe.in::after{transform:scaleX(1)}
+.pg{position:fixed;bottom:calc(22px + env(safe-area-inset-bottom,0px));inset-inline-start:max(28px,env(safe-area-inset-left,0px));z-index:15;font-family:var(--f-en);font-size:11.5px;letter-spacing:.2em;color:var(--dim);direction:ltr;pointer-events:none}
+.pg b{color:var(--gold);font-weight:500}
+@media (max-width:980px){.arts{grid-template-columns:1fr}.pg{display:none}}
 </style>
 
 </head>
 <body>
 <canvas id="stage" aria-hidden="true"></canvas>
-<div class="veil" aria-hidden="true"></div>
+<div class="shade" aria-hidden="true"></div>
+<div class="wipe" id="wipe" aria-hidden="true"></div>
+<div class="pg" id="pg" aria-hidden="true"><b>01</b> / 05 · HOME</div>
 
-<header class="hd pad">
-  <a class="logo" href="#top">علي العريني<span>.</span></a>
-  <nav aria-label="الأقسام"><a href="#vision">الرؤية</a><a href="#pillars">أسس القيادة</a><a href="#journey">المسيرة</a><a href="#creds">المؤهلات</a></nav>
-  <a class="cta" href="#contact">تواصل</a>
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="#home"><i></i><span lang="ar">علي العريني</span><span lang="en">Ali Aloraini</span></a>
+    <nav aria-label="Sections">
+      <a href="#home" data-go="home"><span lang="ar">الرئيسية</span><span lang="en">Home</span></a>
+      <a href="#about" data-go="about"><span lang="ar">عنّي</span><span lang="en">About</span></a>
+      <a href="#career" data-go="career"><span lang="ar">المسيرة</span><span lang="en">Career</span></a>
+      <a href="#insights" data-go="insights"><span lang="ar">رؤى</span><span lang="en">Insights</span></a>
+    </nav>
+    <div class="tools">
+      <button class="lang" id="lang" type="button" aria-label="Switch language">EN</button>
+      <a class="cta" href="#contact"><span lang="ar">تواصل</span><span lang="en">Contact</span></a>
+    </div>
+  </div>
 </header>
 
-<nav class="rail" aria-label="الفصول">
-  <a href="#top" class="on"><i></i>01</a><a href="#vision"><i></i>02</a><a href="#pillars"><i></i>03</a><a href="#journey"><i></i>04</a><a href="#creds"><i></i>05</a><a href="#contact"><i></i>06</a>
-</nav>
-
 <main>
-<section class="chap pad" id="top" data-k="0">
-  <div class="in">
-    <span class="ch">ALI A. ALORAINI</span>
-    <h1>علي العريني</h1>
-    <p class="lead">أتّجه إلى قيادة المؤسسات بالبيانات. أؤمن أن القرار الصحيح يبدأ من رقم صحيح، وأبني طريقي إليه بانضباط مدير المشاريع.</p>
-    <div class="trio">
-      <div><b>PMP®</b>إدارة المشاريع</div>
-      <div><b>دار الهندسة</b>منذ 2025</div>
-      <div><b>البيانات</b>وجهتي القيادية</div>
-    </div>
-    <div class="btns">
-      <a class="btn solid" href="#vision">اكتشف الرؤية</a>
-      <a class="btn glass" href="#contact">تواصل معي</a>
-    </div>
-  </div>
-</section>
-
-<section class="chap end pad" id="vision" data-k="1">
-  <div class="in lift">
-    <span class="ch">02 · VISION</span>
-    <h2>البيانات هي اللغة التي ستقود بها المؤسسات القادمة.</h2>
-    <p class="lead">ورأيت ذلك في كل مشروع عملت عليه، قبل أن أسمّيه.</p>
-    <p class="body">في HDR حللت حركة السكان بين المناطق وتوقّعتها لدعم تخطيط النقل العام. وفي دار الهندسة أعمل على نماذج BIM وCivil 3D، وهي في جوهرها بيانات: أسطح وكميات وتعارضات تُقرأ قبل أن تُبنى. هدفي أن أنقل هذا التفكير من المشروع إلى قيادة مؤسسة كاملة.</p>
-  </div>
-</section>
-
-<section class="chap pad" id="pillars" data-k="2">
-  <div class="in lift" style="width:min(640px,100%)">
-    <span class="ch">03 · DATA × LEADERSHIP</span>
-    <h2>أسس أبني عليها قيادتي</h2>
-    <div class="pillars">
-      <div class="pill glass"><span class="ch">01</span><h3>التفكير بالأرقام</h3><p>حصر الكميات وجداول BOQ وتحسين أعمال الحفر والردم، وتحليل حركة السكان وتوقّعها.</p></div>
-      <div class="pill glass"><span class="ch">02</span><h3>النماذج الرقمية</h3><p>نمذجة BIM وCivil 3D، ومراجعة النماذج وكشف التعارضات في Navisworks.</p></div>
-      <div class="pill glass"><span class="ch">03</span><h3>قيادة الفرق</h3><p>أنسّق بين تخصصات الإنشاءات والتصريف والأنفاق والمرافق والاتصالات، وأتعامل مباشرة مع العملاء.</p></div>
-      <div class="pill glass"><span class="ch">04</span><h3>انضباط التنفيذ</h3><p>محترف إدارة مشاريع PMP، مع تدريب في إدارة المخاطر من بكه والهيئة السعودية للمهندسين.</p></div>
+<section class="view hero" data-view="home">
+  <div class="cue" aria-hidden="true">SCROLL</div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="tag">Data · Vision · Leadership</div>
+        <h1><span lang="ar">علي العريني</span><span lang="en">Ali Aloraini</span></h1>
+      </div>
+      <div>
+        <p><span lang="ar">أرى مستقبل المؤسسات في البيانات، وأبني طريقي لأقودها إليه. القرار الصحيح يبدأ من رقم صحيح.</span><span lang="en">I see the future of organisations in data, and I am building my way to lead them there. The right decision starts with the right number.</span></p>
+        <div class="meta">
+          <div><b>PMP®</b><span lang="ar">إدارة المشاريع</span><span lang="en">Project Management</span></div>
+          <div><b><span lang="ar">دار الهندسة</span><span lang="en">Dar Al-Handasah</span></b><span lang="ar">منذ 2025</span><span lang="en">Since 2025</span></div>
+          <div><b><span lang="ar">الرياض</span><span lang="en">Riyadh</span></b><span lang="ar">السعودية</span><span lang="en">Saudi Arabia</span></div>
+        </div>
+        <div class="enter"><a href="#about"><span lang="ar">اكتشف الرؤية</span><span lang="en">Explore the vision</span><i>→</i></a><a href="#career"><span lang="ar">المسيرة</span><span lang="en">Career</span><i>→</i></a></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="chap end pad" id="journey" data-k="3">
-  <div class="in lift">
-    <span class="ch">04 · JOURNEY</span>
-    <h2>خمس محطات، وكل محطة أوسع من التي قبلها</h2>
-    <div class="journey">
-      <div class="j now"><span class="y">2025 —</span><div><h3>دار الهندسة<small>تصميم الطرق والطرق السريعة</small></h3><p>نماذج BIM وCivil 3D وكميات وتقارير لمشاريع في السعودية ورومانيا.</p></div></div>
-      <div class="j"><span class="y">2024</span><div><h3>ماركو<small>مشروع الرياض الخضراء</small></h3><p>تنسيق الموقع ومتابعة التقدم والموارد.</p></div></div>
-      <div class="j"><span class="y">2024</span><div><h3>ربيعة جاردن<small>سكس فلاغز القدية</small></h3><p>إشراف ميداني وتفتيش على الجودة.</p></div></div>
-      <div class="j"><span class="y">2023</span><div><h3>HDR<small>برنامج تمهير</small></h3><p>تحليل حركة السكان وتوقّعها، وتقارير لتخطيط النقل العام.</p></div></div>
-      <div class="j"><span class="y">2022</span><div><h3>المركز الوطني لتنمية الغطاء النباتي<small>تمهير</small></h3><p>تنسيق الشراكات ومذكرات التفاهم.</p></div></div>
+<section class="view brief" data-view="about">
+  <div class="wrap lift">
+    <div class="sh">
+      <div class="n">01 · <span lang="ar">الرؤية</span><span lang="en">Vision</span></div>
+      <div>
+        <h2><span lang="ar">البيانات هي اللغة التي ستقود بها <em>المؤسسات القادمة.</em></span><span lang="en">Data is the language the next generation of organisations <em>will lead in.</em></span></h2>
+        <p class="lede"><span lang="ar">رأيت ذلك في كل مشروع عملت عليه قبل أن أسمّيه: في تحليل حركة السكان لتخطيط النقل العام، وفي نماذج BIM التي تُقرأ قبل أن تُبنى. هدفي أن أنقل هذا التفكير من المشروع إلى قيادة مؤسسة كاملة.</span><span lang="en">I saw it in every project before I had a name for it: analysing population movement to plan public transport, and BIM models that are read before they are built. My aim is to carry that thinking from the project to the leadership of a whole organisation.</span></p>
+      </div>
+    </div>
+    <div class="evid">
+      <div class="ev"><b>PMP<small>®</small></b><span lang="ar">محترف إدارة مشاريع، PMI 2025</span><span lang="en">Project Management Professional, PMI 2025</span></div>
+      <div class="ev"><b>02</b><span lang="ar">بلدان: مشاريع في السعودية ورومانيا</span><span lang="en">Countries: projects in Saudi Arabia and Romania</span></div>
+      <div class="ev"><b>05</b><span lang="ar">جهات عمل في أربع سنوات</span><span lang="en">Organisations in four years</span></div>
+      <div class="ev"><b>4.19<small>/5</small></b><span lang="ar">معدل البكالوريوس، جامعة الملك سعود</span><span lang="en">B.Eng. GPA, King Saud University</span></div>
+    </div>
+  </div>
+
+  <div class="wrap lift" style="margin-top:140px">
+    <div class="sh">
+      <div class="n">01 · <span lang="ar">المنهج</span><span lang="en">Approach</span></div>
+      <h2><span lang="ar">أربعة أسس <em>أبني عليها قيادتي</em></span><span lang="en">Four foundations <em>for how I lead</em></span></h2>
+    </div>
+    <div class="insights">
+      <div class="ins"><div class="k">01 · NUMBERS</div><h3><span lang="ar">التفكير بالأرقام</span><span lang="en">Thinking in numbers</span></h3><p><span lang="ar">حصر الكميات وجداول BOQ وتحسين أعمال الحفر والردم، وتحليل حركة السكان وتوقّعها.</span><span lang="en">Quantity take-offs, BOQs, earthworks optimisation, and analysing and forecasting population movement.</span></p></div>
+      <div class="ins"><div class="k">02 · MODELS</div><h3><span lang="ar">النماذج الرقمية</span><span lang="en">Digital models</span></h3><p><span lang="ar">نمذجة BIM وCivil 3D، ومراجعة النماذج وكشف التعارضات في Navisworks.</span><span lang="en">BIM and Civil 3D modelling, model review and clash detection in Navisworks.</span></p></div>
+      <div class="ins"><div class="k">03 · PEOPLE</div><h3><span lang="ar">قيادة الفرق</span><span lang="en">Leading across teams</span></h3><p><span lang="ar">تنسيق بين الإنشاءات والتصريف والأنفاق والمرافق والاتصالات، وتعامل مباشر مع العملاء.</span><span lang="en">Coordinating structures, drainage, tunnels, utilities and telecoms, and working directly with clients.</span></p></div>
+      <div class="ins"><div class="k">04 · DELIVERY</div><h3><span lang="ar">انضباط التنفيذ</span><span lang="en">Disciplined delivery</span></h3><p><span lang="ar">PMP، مع تدريب في إدارة المخاطر من بكه والهيئة السعودية للمهندسين.</span><span lang="en">PMP, with risk management training from Bakkah and the Saudi Council of Engineers.</span></p></div>
     </div>
   </div>
 </section>
 
-<section class="chap pad" id="creds" data-k="4">
-  <div class="in lift">
-    <span class="ch">05 · CREDENTIALS</span>
-    <h2>أساس متين</h2>
+<section class="view brief" data-view="career">
+  <div class="wrap lift">
+    <div class="sh">
+      <div class="n">02 · <span lang="ar">المسيرة</span><span lang="en">Journey</span></div>
+      <h2><span lang="ar">خمس محطات، <em>وكل واحدة أوسع</em></span><span lang="en">Five roles, <em>each one wider</em></span></h2>
+    </div>
+    <div class="tbl">
+      <div class="tr now"><span class="y">2025 —</span><h3><span lang="ar">دار الهندسة</span><span lang="en">Dar Al-Handasah</span></h3><span class="r"><span lang="ar">مهندس تصميم طرق وطرق سريعة</span><span lang="en">Road &amp; Highway Design Engineer</span></span><p><span lang="ar">نماذج BIM وCivil 3D وكميات وتقارير لمشاريع في السعودية ورومانيا.</span><span lang="en">BIM and Civil 3D models, quantities and reports for projects in Saudi Arabia and Romania.</span></p></div>
+      <div class="tr"><span class="y">2024 — 25</span><h3><span lang="ar">ماركو</span><span lang="en">MARCO</span></h3><span class="r"><span lang="ar">مهندس مدني · الرياض الخضراء</span><span lang="en">Civil Engineer · Green Riyadh</span></span><p><span lang="ar">تنسيق الموقع ومتابعة التقدم والموارد.</span><span lang="en">Site coordination, progress and resource tracking.</span></p></div>
+      <div class="tr"><span class="y">2024</span><h3><span lang="ar">ربيعة جاردن</span><span lang="en">Rabiah Garden</span></h3><span class="r"><span lang="ar">مهندس مدني · سكس فلاغز القدية</span><span lang="en">Civil Engineer · Six Flags Qiddiya</span></span><p><span lang="ar">إشراف ميداني وتفتيش على الجودة.</span><span lang="en">Site supervision and quality inspections.</span></p></div>
+      <div class="tr"><span class="y">2023 — 24</span><h3>HDR</h3><span class="r"><span lang="ar">مهندس مدني · تمهير</span><span lang="en">Civil Engineer · Tamheer</span></span><p><span lang="ar">تحليل حركة السكان وتوقّعها، وتقارير لتخطيط النقل العام.</span><span lang="en">Population movement analysis and forecasting for public transport planning.</span></p></div>
+      <div class="tr"><span class="y">2022 — 23</span><h3><span lang="ar">المركز الوطني للغطاء النباتي</span><span lang="en">National Center for Vegetation Cover</span></h3><span class="r"><span lang="ar">منسق شراكات · تمهير</span><span lang="en">Partnerships Coordinator · Tamheer</span></span><p><span lang="ar">تنسيق الشراكات ومذكرات التفاهم.</span><span lang="en">Partnership coordination and MoUs.</span></p></div>
+    </div>
+  </div>
+
+  <div class="wrap lift" style="margin-top:140px">
+    <div class="sh">
+      <div class="n">02 · <span lang="ar">المؤهلات</span><span lang="en">Credentials</span></div>
+      <h2><span lang="ar">أساس <em>متين</em></span><span lang="en">A solid <em>foundation</em></span></h2>
+    </div>
     <div class="creds">
-      <div class="cr glass"><div class="k">PMP®</div><h3>محترف إدارة المشاريع</h3><p>PMI · 2025</p></div>
-      <div class="cr glass"><div class="k">SCE</div><h3>مهندس مشارك</h3><p>الهيئة السعودية للمهندسين · 2025</p></div>
-      <div class="cr glass"><div class="k">4.19</div><h3>بكالوريوس الهندسة المدنية</h3><p>جامعة الملك سعود · من 5</p></div>
-      <div class="cr glass"><div class="k">RMP</div><h3>إدارة المخاطر</h3><p>بكه · 2025</p></div>
+      <div class="cr"><span class="k">PMP®</span><h3><span lang="ar">محترف إدارة المشاريع</span><span lang="en">Project Management Professional</span></h3><p>PMI · 2025</p></div>
+      <div class="cr"><span class="k">SCE</span><h3><span lang="ar">مهندس مشارك</span><span lang="en">Associate Civil Engineer</span></h3><p><span lang="ar">الهيئة السعودية للمهندسين · 2025</span><span lang="en">Saudi Council of Engineers · 2025</span></p></div>
+      <div class="cr"><span class="k">B.Eng.</span><h3><span lang="ar">الهندسة المدنية</span><span lang="en">Civil Engineering</span></h3><p><span lang="ar">جامعة الملك سعود · 2022</span><span lang="en">King Saud University · 2022</span></p></div>
+      <div class="cr"><span class="k">RMP</span><h3><span lang="ar">إدارة المخاطر</span><span lang="en">Risk Management</span></h3><p><span lang="ar">بكه · 2025</span><span lang="en">Bakkah · 2025</span></p></div>
     </div>
-    <div class="tools"><span>Excel</span><span>MATLAB</span><span>BIM</span><span>Civil 3D</span><span>Navisworks</span><span>InfraWorks</span><span>AutoCAD</span></div>
+    <div class="stack"><span>Excel</span><span>MATLAB</span><span>BIM</span><span>Civil 3D</span><span>Navisworks</span><span>InfraWorks</span><span>AutoCAD</span></div>
   </div>
 </section>
 
-<section class="chap end pad" id="contact" data-k="5">
-  <div class="in lift">
-    <span class="ch">06 · CONTACT</span>
-    <h2>لنصنع قرارات أذكى معًا.</h2>
-    <p class="lead">للفرص القيادية في البيانات، والشراكات، والحديث عن المستقبل.</p>
+<section class="view brief" data-view="insights">
+  <div class="wrap lift">
+    <div class="sh">
+      <div class="n">03 · <span lang="ar">رؤى</span><span lang="en">Insights</span></div>
+      <div>
+        <h2><span lang="ar">أفكار عن <em>المستقبل</em> والبيانات والقيادة</span><span lang="en">Thinking on the <em>future</em>, data and leadership</span></h2>
+        <p class="lede"><span lang="ar">مساحة لمقالاتي القادمة. العناوين أدناه مسودات مقترحة وستُنشر قريبًا.</span><span lang="en">A home for upcoming articles. The titles below are proposed drafts, coming soon.</span></p>
+      </div>
+    </div>
+    <div class="arts">
+      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">من النموذج إلى القرار: ماذا تعلّم BIM القادة؟</span><span lang="en">From model to decision: what BIM teaches leaders</span></h3><p><span lang="ar">البيانات · القيادة</span><span lang="en">Data · Leadership</span></p></a>
+      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">المدن التي تتنبأ بحركة سكانها</span><span lang="en">Cities that forecast how people move</span></h3><p><span lang="ar">البيانات · المدن</span><span lang="en">Data · Cities</span></p></a>
+      <a class="art" href="#contact"><span class="soon"><span lang="ar">قريبًا · مسودة</span><span lang="en">Coming soon · Draft</span></span><h3><span lang="ar">لماذا يحتاج كل مشروع إلى قائد يقرأ الأرقام؟</span><span lang="en">Why every project needs a leader who reads numbers</span></h3><p><span lang="ar">إدارة المشاريع</span><span lang="en">Project management</span></p></a>
+    </div>
+  </div>
+</section>
+
+<section class="contact view" data-view="contact">
+  <div class="wrap lift">
+    <div class="tag">04 · Contact</div>
+    <h2 style="margin-top:20px"><span lang="ar">لنصنع قرارات <em>أذكى</em> معًا.</span><span lang="en">Let's make <em>smarter</em> decisions together.</span></h2>
     <a class="mail" href="mailto:AlorainiAli1@gmail.com">AlorainiAli1@gmail.com</a>
-    <div class="links"><a href="https://www.linkedin.com/in/alorainiali" target="_blank" rel="noopener">LinkedIn ↗</a><span>العربية · English</span></div>
+    <div class="links"><a href="https://www.linkedin.com/in/alorainiali" target="_blank" rel="noopener">LinkedIn ↗</a><span lang="ar">العربية · الإنجليزية</span><span lang="en">Arabic · English</span></div>
   </div>
 </section>
 </main>
 
-<footer class="pad"><div class="row"><span>© 2026 علي العريني</span><span style="direction:ltr">alialoraini.sa</span></div></footer>
+<footer><div class="wrap"><span>© 2026 <span lang="ar">علي العريني</span><span lang="en">Ali Aloraini</span></span><span style="direction:ltr">alialoraini.sa</span></div></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
-  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,small=innerWidth<900;
+  var root=document.documentElement,reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,small=innerWidth<900;
 
-  /* chapter rail + entrance lift */
-  var chaps=[].slice.call(document.querySelectorAll(".chap")),rail=[].slice.call(document.querySelectorAll(".rail a"));
+  /* language */
+  function setLang(l){root.setAttribute("data-l",l);root.lang=l;root.dir=l==="ar"?"rtl":"ltr";document.getElementById("lang").textContent=l==="ar"?"EN":"عربي";try{localStorage.setItem("lang",l)}catch(e){}}
+  var saved="ar";try{saved=localStorage.getItem("lang")||"ar"}catch(e){}
+  setLang(saved);
+  document.getElementById("lang").addEventListener("click",function(){setLang(root.getAttribute("data-l")==="ar"?"en":"ar")});
+
+  /* entrance lift (content visible at rest) + dim the stage while reading */
   if("IntersectionObserver" in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var k=+e.target.dataset.k;rail.forEach(function(a,i){a.classList.toggle("on",i===k)})}})},{threshold:.5});
-    chaps.forEach(function(c){io.observe(c)});
     if(!reduce){var lifts=[].slice.call(document.querySelectorAll(".lift"));lifts.forEach(function(l){if(l.getBoundingClientRect().top>innerHeight)l.classList.add("down")});
-      var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove("down");io2.unobserve(e.target)}})},{rootMargin:"0px 0px -10% 0px"});lifts.forEach(function(l){io2.observe(l)});}
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove("down");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px"});lifts.forEach(function(l){io.observe(l)})}
   }
+  /* router: five pages, hash-addressed, with a cinematic cross-cut */
+  var views=[].slice.call(document.querySelectorAll(".view")),names=["home","about","career","insights","contact"],cur=null,busy=false;
+  window.__view="home";
+  function show(n){views.forEach(function(v){v.classList.toggle("on",v.dataset.view===n)});
+    [].slice.call(document.querySelectorAll(".hd nav a")).forEach(function(a){a.classList.toggle("on",a.dataset.go===n)});
+    var i=names.indexOf(n);document.getElementById("pg").innerHTML="<b>0"+(i+1)+"</b> / 05 · "+n.toUpperCase();
+    window.__view=n;scrollTo(0,0);readState();
+    if(!reduce){[].slice.call(document.querySelectorAll(".view.on .lift")).forEach(function(l,j){l.classList.add("down");setTimeout(function(){l.classList.remove("down")},80+j*120)})}
+  }
+  function route(){var n=(location.hash||"#home").slice(1);if(names.indexOf(n)<0)n="home";if(n===cur)return;
+    if(cur===null||reduce){cur=n;show(n);return}
+    var w=document.getElementById("wipe");busy=true;w.classList.add("in");
+    setTimeout(function(){cur=n;show(n);setTimeout(function(){w.classList.remove("in");busy=false},120)},560)}
+  addEventListener("hashchange",route);route();
+  function readState(){document.body.classList.toggle("reading",window.__view!=="home"||scrollY>innerHeight*.55)}
+  addEventListener("scroll",readState,{passive:true});readState();
 
   if(!window.THREE)return;
   var T=THREE,cv=document.getElementById("stage"),R;
   try{R=new T.WebGLRenderer({canvas:cv,antialias:true,alpha:true,powerPreference:"high-performance"})}catch(e){return}
-  // adaptive supersampling: start at the screen's native density, climb toward 1.5x native while frames stay fast, step down if they don't
-  var DPR=devicePixelRatio||1,qMax=Math.min(small?2.5:3,DPR*1.5),qMin=Math.min(1,DPR),q=Math.min(DPR,small?2:2.5);
-  R.setPixelRatio(q);
-  R.outputEncoding=T.sRGBEncoding;R.toneMapping=T.ACESFilmicToneMapping;R.toneMappingExposure=1.05;R.physicallyCorrectLights=true;
-  var scene=new T.Scene(),cam=new T.PerspectiveCamera(35,1,.1,100);cam.position.set(0,0,12);
+  var DPR=devicePixelRatio||1,q=Math.min(DPR,small?2:2.5),qMax=Math.min(small?2.5:3,DPR*1.5),qMin=Math.min(1,DPR);
+  R.setPixelRatio(q);R.outputEncoding=T.sRGBEncoding;R.toneMapping=T.ACESFilmicToneMapping;R.toneMappingExposure=1.08;R.physicallyCorrectLights=true;
+  var scene=new T.Scene(),cam=new T.PerspectiveCamera(32,1,.1,120);cam.position.set(0,0,15);
 
-  /* studio environment: a soft room with light boxes, baked to a reflection map */
-  var env=new T.Scene(),room=new T.Mesh(new T.BoxGeometry(30,20,30),new T.MeshBasicMaterial({color:0x070709,side:T.BackSide}));env.add(room);
-  function box(w,h,x,y,z,ry,c,i){var m=new T.Mesh(new T.PlaneGeometry(w,h),new T.MeshBasicMaterial({color:new T.Color(c).multiplyScalar(i),side:T.DoubleSide}));m.position.set(x,y,z);m.rotation.y=ry;m.lookAt(0,0,0);env.add(m)}
-  box(14,3,0,9,0,0,0xffffff,6);           // top strip
-  box(2,14,-7,2,-12,0,0xffffff,4);        // thin back strip for long highlights
-  box(2,14,7,2,-12,0,0xffffff,2.5);
-  box(6,12,-14,0,4,0,0xffe2c4,3.2);       // warm key, left
-  box(4,10,13,1,-6,0,0xc8d8ff,2.2);       // cool rim, right
-  box(10,4,0,-2,14,0,0xffffff,1.4);       // front fill
-  var pm=new T.PMREMGenerator(R),envMap=pm.fromScene(env,.03).texture;scene.environment=envMap;
+  /* studio lighting baked into a reflection map */
+  var env=new T.Scene();env.add(new T.Mesh(new T.BoxGeometry(40,24,40),new T.MeshBasicMaterial({color:0x050506,side:T.BackSide})));
+  function box(w,h,x,y,z,c,i){var m=new T.Mesh(new T.PlaneGeometry(w,h),new T.MeshBasicMaterial({color:new T.Color(c).multiplyScalar(i),side:T.DoubleSide}));m.position.set(x,y,z);m.lookAt(0,0,0);env.add(m)}
+  box(16,3,0,11,0,0xffffff,6);box(6,14,-16,0,5,0xffdcb0,3.4);box(4,12,15,1,-6,0xd0dcff,2);box(2,16,-8,2,-15,0xffffff,4);box(2,16,8,2,-15,0xffe6c0,3);box(12,3,0,-3,16,0xffffff,1.2);
+  var pm=new T.PMREMGenerator(R);scene.environment=pm.fromScene(env,.025).texture;
 
-  var chrome=new T.MeshStandardMaterial({color:0xffffff,metalness:1,roughness:.12});
-  var gold=new T.MeshStandardMaterial({color:0xD8C3A0,metalness:1,roughness:.22});
-  var glass=new T.MeshPhysicalMaterial({color:0xcfd6e6,metalness:.1,roughness:.04,transparent:true,opacity:.1,clearcoat:1,clearcoatRoughness:.03,envMapIntensity:3,depthWrite:false,side:T.DoubleSide});
-  var glassBar=new T.MeshPhysicalMaterial({color:0xe9e4da,metalness:.15,roughness:.12,transparent:true,opacity:.55,clearcoat:1,clearcoatRoughness:.05,envMapIntensity:2});
-  var black=new T.MeshPhysicalMaterial({color:0x0d0d0f,metalness:.2,roughness:.35,clearcoat:1,clearcoatRoughness:.1});
+  var chrome=new T.MeshStandardMaterial({color:0xffffff,metalness:1,roughness:.1});
+  var gold=new T.MeshStandardMaterial({color:0xD9B878,metalness:1,roughness:.18});
+  var glass=new T.MeshPhysicalMaterial({color:0xd8dfeb,metalness:.1,roughness:.03,transparent:true,opacity:.1,clearcoat:1,clearcoatRoughness:.02,envMapIntensity:3,depthWrite:false,side:T.DoubleSide});
+  var black=new T.MeshPhysicalMaterial({color:0x0b0b0d,metalness:.3,roughness:.3,clearcoat:1,clearcoatRoughness:.08});
 
-  var O={
-    ring:new T.Mesh(new T.TorusGeometry(1.5,.42,64,180),chrome),
-    sphere:new T.Mesh(new T.SphereGeometry(1.15,96,96),glass),
-    knot:new T.Mesh(new T.TorusKnotGeometry(.62,.2,220,32,2,3),gold),
-    pill:new T.Mesh(new T.CylinderGeometry(.42,.42,1.9,64,1),black),
-    b1:new T.Mesh(new T.SphereGeometry(.28,48,48),chrome),
-    b2:new T.Mesh(new T.SphereGeometry(.18,48,48),gold)
-  };
-  // round the pill ends
-  (function(){var cap=new T.SphereGeometry(.42,48,24),a=new T.Mesh(cap,black),b=new T.Mesh(cap,black);a.position.y=.95;b.position.y=-.95;O.pill.add(a);O.pill.add(b)})();
-  // data object: a 5x5 field of glass bars whose heights breathe like a live chart
-  var bars=new T.Group(),barList=[],bg=new T.BoxGeometry(.32,1,.32);bg.translate(0,.5,0);
-  for(var gx=0;gx<5;gx++)for(var gz=0;gz<5;gz++){var m=new T.Mesh(bg,(gx+gz)%4===0?gold:glassBar);m.position.set((gx-2)*.42,0,(gz-2)*.42);m.userData={p:gx*.9+gz*.55,h:.4+((gx*7+gz*3)%5)*.32};bars.add(m);barList.push(m)}
-  var base=new T.Mesh(new T.BoxGeometry(2.3,.06,2.3),chrome);base.position.y=-.03;bars.add(base);
-  O.bars=bars;
-  Object.keys(O).forEach(function(k){scene.add(O[k])});
-  scene.add(new T.AmbientLight(0xffffff,.15));
-  var key=new T.DirectionalLight(0xfff1df,2.2);key.position.set(-5,6,6);scene.add(key);
+  var core=new T.Group();scene.add(core);
+  var ring=new T.Mesh(new T.TorusGeometry(2.6,.34,96,256),chrome);core.add(ring);
+  var ring2=new T.Mesh(new T.TorusGeometry(3.25,.05,32,256),gold);ring2.rotation.x=1.2;core.add(ring2);
+  var orb=new T.Mesh(new T.SphereGeometry(1.55,128,128),glass);core.add(orb);
+  var heart=new T.Mesh(new T.SphereGeometry(.42,96,96),gold);core.add(heart);
+  var sats=[];for(var s=0;s<5;s++){var m=new T.Mesh(new T.SphereGeometry(s%2?.16:.24,64,64),s%2?gold:chrome);sats.push(m);core.add(m)}
+  var pill=new T.Mesh(new T.CylinderGeometry(.3,.3,1.5,64),black);(function(){var cg=new T.SphereGeometry(.3,48,24),c1=new T.Mesh(cg,black),c2=new T.Mesh(cg,black);c1.position.y=.75;c2.position.y=-.75;pill.add(c1);pill.add(c2)})();core.add(pill);
 
-  /* six compositions, one per chapter: [x,y,z,scale] — the camera dollies between them */
-  var K={
-    ring:  [[-3.1,.3,0,1.15],[2.9,.2,-1,.9],[-3.4,1.6,-2,.7],[3.2,-1.4,-1.5,.8],[-2.6,-.2,-.5,1],[2.4,.4,0,1.3]],
-    sphere:[[-1.7,-1.1,1.6,1],[1.4,-1.3,1.2,1.25],[-1.8,-.4,1.2,1.2],[2.2,1.2,.6,.9],[-3.6,1.6,-1,.8],[3.6,-1.2,1,.8]],
-    knot:  [[-4.6,1.9,-1.5,.8],[3.8,1.9,-2,1],[-4.4,-1.6,0,1.1],[1.6,-.4,1.8,1.1],[-1.6,-1.8,1.4,.9],[1.4,1.8,-1,.9]],
-    pill:  [[-2.2,2.4,-3,.8],[4.6,-.8,-2.5,.8],[-2.6,2.6,-3,.8],[4.4,1.6,-2,.9],[-4.2,-1.8,-1.5,1],[4.4,1.4,-2,.9]],
-    b1:    [[-4.4,-1.9,1,1],[1.7,2.1,0,1],[-1.2,-2.2,2,1],[2.9,2.6,-.5,1],[-1.2,2.3,.5,1],[1.7,-2.1,1.5,1]],
-    b2:    [[-.6,1.7,1,1],[4.2,1.2,.5,1],[-3.6,.4,2.4,1],[1.4,-2.4,1,1],[-3.2,-.6,2,1],[3.2,.2,2.2,1]],
-    bars:  [[-3.9,-2.6,-1,.9],[2.6,-.9,.4,1.25],[-2.9,-1.4,.6,1.35],[3.4,-2.6,-1,.9],[-2.4,-1.1,.6,1.3],[2.2,-2.8,-1.5,1]]
-  };
-  K.bars=K.bars.map(function(v){return [v[0],v[1],v[2],v[3]*.68]});
-  if(!small){Object.keys(K).forEach(function(k){K[k]=K[k].map(function(v){return [v[0]*1.12,v[1],v[2],v[3]]})})}
-  if(small){Object.keys(K).forEach(function(k){K[k]=K[k].map(function(v){return [v[0]*.45,v[1]*.7+1.6,v[2],v[3]*.72]})})}
+  /* data streams: thousands of points travelling on tilted orbits through the ring */
+  var NS=small?16:26,PER=small?300:520,N=NS*PER,pos=new Float32Array(N*3),col=new Float32Array(N*3),meta=[];
+  for(var k=0;k<NS;k++){var r=2.1+Math.random()*2.6,tx=(Math.random()-.5)*2.4,tz=(Math.random()-.5)*1.6,sp=(.04+Math.random()*.06)*(Math.random()<.5?-1:1),g=k%3===0;meta.push({r:r,tx:tx,tz:tz,sp:sp,g:g,e:.75+Math.random()*.35})}
+  var ph=new Float32Array(N),jit=new Float32Array(N*3);
+  for(var i=0;i<N;i++){var mk=meta[Math.floor(i/PER)],u=(i%PER)/PER;ph[i]=u+Math.random()*.004;jit[i*3]=(Math.random()-.5)*.05;jit[i*3+1]=(Math.random()-.5)*.05;jit[i*3+2]=(Math.random()-.5)*.05;
+    var tail=Math.pow((i%PER)/PER,1.6),b=mk.g?[.88,.72,.45]:[.9,.9,.92];var L=.4+.9*tail;col[i*3]=b[0]*L;col[i*3+1]=b[1]*L;col[i*3+2]=b[2]*L}
+  var sgeo=new T.BufferGeometry();sgeo.setAttribute("position",new T.BufferAttribute(pos,3));sgeo.setAttribute("color",new T.BufferAttribute(col,3));
+  var sc=document.createElement("canvas");sc.width=sc.height=64;var sx=sc.getContext("2d"),gr=sx.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,"rgba(255,255,255,1)");gr.addColorStop(.3,"rgba(255,255,255,.85)");gr.addColorStop(.65,"rgba(255,255,255,.12)");gr.addColorStop(1,"rgba(255,255,255,0)");sx.fillStyle=gr;sx.fillRect(0,0,64,64);
+  var smat=new T.PointsMaterial({size:small?.09:.085,map:new T.CanvasTexture(sc),vertexColors:true,transparent:true,depthWrite:false,blending:T.AdditiveBlending,sizeAttenuation:true});
+  var streams=new T.Points(sgeo,smat);core.add(streams);
+  // fine dust for depth
+  var DN=small?600:1400,dpos=new Float32Array(DN*3);for(var d=0;d<DN;d++){dpos[d*3]=(Math.random()-.5)*40;dpos[d*3+1]=(Math.random()-.5)*24;dpos[d*3+2]=-Math.random()*30}
+  var dgeo=new T.BufferGeometry();dgeo.setAttribute("position",new T.BufferAttribute(dpos,3));
+  var dust=new T.Points(dgeo,new T.PointsMaterial({size:.05,map:smat.map,color:0x8a8478,transparent:true,opacity:.55,depthWrite:false,blending:T.AdditiveBlending}));scene.add(dust);
 
   function size(){R.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
-  size();addEventListener("resize",size);
+  size();addEventListener("resize",function(){small=innerWidth<900;size()});
 
-  var prog=0,tp=0,mx=0,my=0,tmx=0,tmy=0,t0=performance.now();
-  function onS(){
-    // map scroll to chapter index with a hold in the middle of each chapter
-    var y=scrollY+innerHeight*.5,idx=0,f=0;
-    for(var i=0;i<chaps.length;i++){var c=chaps[i],top=c.offsetTop,h=c.offsetHeight;if(y>=top){idx=i;f=Math.min(1,(y-top)/h)}}
-    var hold=Math.max(0,Math.min(1,(f-.55)/.45));tp=Math.min(chaps.length-1,idx+hold);
-  }
-  addEventListener("scroll",onS,{passive:true});onS();prog=tp;
+  var poses={home:[0,.15,0,0],about:[3.9,.2,-4,1],career:[-4,.3,-4.6,2],insights:[0,1.9,-6.5,3],contact:[0,.1,-2.2,4]},px=0,py=.15,pz=0,pr=0;
+  var sp=0,tsp=0,mx=0,my=0,tmx=0,tmy=0,intro=reduce?1:0,t0=performance.now(),last=0,fc=0,acc=0;
+  function onS(){tsp=Math.min(1,scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight))}
+  addEventListener("scroll",onS,{passive:true});onS();sp=tsp;
   addEventListener("pointermove",function(e){tmx=e.clientX/innerWidth-.5;tmy=e.clientY/innerHeight-.5},{passive:true});
-  function ease(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}
-  var last=0,fc=0,acc=0;
+  function ease(x){return 1-Math.pow(1-x,4)}
+  var e3=new T.Euler(),m4=new T.Matrix4(),v=new T.Vector3();
   function frame(now){
     var t=(now-t0)/1000,dt=Math.min(.05,last?(now-last)/1000:.016);last=now;
-    var kP=1-Math.pow(.034,dt),kM=1-Math.pow(.09,dt);   // frame-rate independent easing
-    prog+=(tp-prog)*kP;mx+=(tmx-mx)*kM;my+=(tmy-my)*kM;
-    fc++;acc+=dt;if(acc>1.2){var fps=fc/acc;fc=0;acc=0;
-      var nq=fps>57&&q<qMax?Math.min(qMax,q+.25):(fps<48&&q>qMin?Math.max(qMin,q-.25):q);
-      if(nq!==q){q=nq;R.setPixelRatio(q);R.setSize(innerWidth,innerHeight,false)}}
-    var a=Math.floor(prog),b=Math.min(5,a+1),f=ease(prog-a);
-    Object.keys(O).forEach(function(k,n){
-      var A=K[k][a],B=K[k][b],o=O[k],fl=reduce?0:Math.sin(t*.7+n*1.3)*.12;
-      o.position.set(A[0]+(B[0]-A[0])*f,A[1]+(B[1]-A[1])*f+fl,A[2]+(B[2]-A[2])*f);
-      var s=A[3]+(B[3]-A[3])*f;o.scale.setScalar(s);
-    });
-    var spin=reduce?0:t;
-    O.ring.rotation.set(.9+prog*.6+my*.3,spin*.18+prog*.9,.3);
-    O.knot.rotation.set(spin*.25,spin*.32+prog,0);
-    O.pill.rotation.set(.5,0,-.7+prog*.5+Math.sin(spin*.4)*.1);
-    O.sphere.rotation.y=spin*.1;
-    O.bars.rotation.set(.38+my*.15,-.6+spin*.12+prog*.5,0);
-    barList.forEach(function(m){var d=m.userData,h=d.h+(reduce?0:Math.sin(t*1.1+d.p)*.35+.35);m.scale.y=Math.max(.08,h)});
-    cam.position.x=mx*1.4+Math.sin(prog*1.1)*.6;cam.position.y=-my*.9;cam.position.z=12-Math.sin(prog*.9)*1.2;
-    cam.lookAt(0,0,0);
+    var kS=1-Math.pow(.05,dt),kM=1-Math.pow(.12,dt),kP=1-Math.pow(.18,dt);
+    sp+=(tsp-sp)*kS;mx+=(tmx-mx)*kM;my+=(tmy-my)*kM;
+    if(intro<1)intro=Math.min(1,intro+dt/3.2);var ie=ease(intro);
+    var calm=reduce?0:t;
+
+    // composition: centred in the hero, drifts aside and recedes as the brief begins
+    var side=(root.dir==="rtl"?-1:1),P=poses[window.__view]||poses.home,a=Math.min(1,scrollY/Math.max(1,innerHeight));
+    var tx=small?0:P[0]*side,ty=small?P[1]*.5+(P===poses.home?.9:2.2):P[1],tz=P[2]-a*1.5;
+    px+=(tx-px)*kP;py+=(ty-py)*kP;pz+=(tz-pz)*kP;pr+=(P[3]-pr)*kP;
+    core.position.set(px,py,pz);
+    var sc0=(small?.62:1)*(0.82+.18*ie);core.scale.setScalar(sc0);
+    core.rotation.set(-.12+my*.12+pr*.5,calm*.05+mx*.25+pr*1.6,0);
+    ring.rotation.set(1.05+Math.sin(calm*.12)*.08,calm*.06,.35);
+    ring2.rotation.set(1.2,calm*-.09,.2+Math.sin(calm*.1)*.1);
+    heart.position.y=Math.sin(calm*.6)*.06;
+    sats.forEach(function(m,j){var an=calm*(.12+j*.03)+j*1.26,rr=3.9+j*.35;m.position.set(Math.cos(an)*rr,Math.sin(an*1.3)*.9,Math.sin(an)*rr*.6)});
+    pill.position.set(-3.6,2.1,-1.5);pill.rotation.set(.4,0,-.8+Math.sin(calm*.2)*.1);
+
+    for(var k=0,i=0;k<NS;k++){var mk=meta[k];e3.set(mk.tx,calm*.01*k,mk.tz);m4.makeRotationFromEuler(e3);
+      for(var p=0;p<PER;p++,i++){var u=(ph[i]+calm*mk.sp)%1;if(u<0)u+=1;var an=u*6.2832,rr=mk.r*(1+.06*Math.sin(an*3+k));
+        v.set(Math.cos(an)*rr,Math.sin(an*2+k)*.18,Math.sin(an)*rr*mk.e).applyMatrix4(m4);
+        var spread=1+(1-ie)*3.5;pos[i*3]=v.x*spread+jit[i*3];pos[i*3+1]=v.y*spread+jit[i*3+1];pos[i*3+2]=v.z*spread+jit[i*3+2]}}
+    sgeo.attributes.position.needsUpdate=true;smat.opacity=ie;
+    dust.rotation.y=calm*.004+mx*.05;
+
+    cam.position.x=mx*.9;cam.position.y=-my*.6;cam.lookAt(0,0,0);
+    fc++;acc+=dt;if(acc>1.2){var fps=fc/acc;fc=0;acc=0;var nq=fps>57&&q<qMax?Math.min(qMax,q+.25):(fps<48&&q>qMin?Math.max(qMin,q-.25):q);if(nq!==q){q=nq;R.setPixelRatio(q);R.setSize(innerWidth,innerHeight,false)}}
     R.render(scene,cam);
     if(!reduce)requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
-  if(reduce)addEventListener("scroll",function(){prog=tp;requestAnimationFrame(frame)},{passive:true});
+  if(reduce)addEventListener("scroll",function(){requestAnimationFrame(frame)},{passive:true});
 })();
 </script>
 
